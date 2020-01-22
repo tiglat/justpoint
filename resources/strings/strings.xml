@@ -5,6 +5,7 @@
 
     <string id="txt_press_menu">Click the menu button</string>
     <string id="txt_empty_list">No waypoints</string>
+    <string id="txt_clear_storage">Clear App Storage?</string>
     
     <!-- Main Menu -->
     
@@ -12,6 +13,8 @@
     <string id="menu_label_add">Add New</string>
     <string id="menu_label_delete_all">Delete All</string>
     <string id="menu_label_delete_selected">Delete Selected</string>
+    <string id="menu_label_clean_storage">Clean Storage</string>
+    <string id="menu_sublabel_clean_storage">all app data</string>
     <string id="menu_label_exit_app">Exit App</string>
     
     <!-- Add Menu -->
@@ -26,6 +29,8 @@
     
     <string id="picker_title_lat">Latitude</string>
     <string id="picker_title_lon">Longitude</string>
+    <string id="picker_title_name">Pick Waypoint Name</string>
     <string id="picker_char_ok">OK</string>
+    
     
 </strings>

@@ -2,6 +2,10 @@ using Toybox.WatchUi;
 
 class JustWaypointsView extends WatchUi.View {
 
+    private var _waypointsMenu;
+    private var _waypointsMenuDelegate;
+
+
     function initialize() {
         View.initialize();
     }
@@ -27,6 +31,26 @@ class JustWaypointsView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
+    }
+    
+    function updateMenu() {
+        
+//        waypointsMenu = new WatchUi.Menu();
+//        waypointsMenu.setTitle(menuTitleStr);
+//        
+//        var pointsIt = PersistedContent.getWaypoints();
+//
+//        var point = pointsIt.next();
+//
+//        while (point != null) {
+//            waypointsMenu.addItem(point.getName(), point.getId());
+//            point = pointsIt.next();    
+//        } 
+//        
+//        waypointsMenu.addItem(menuSaveStr, :item_save);
+//        waypointsMenu.addItem(menuExitStr, :item_exit);
+
+        
     }
 
 }

@@ -1,346 +1,535 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="18" pc="268435456" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="20" pc="268435460" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="22" pc="268435470" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="24" pc="268435470" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="25" pc="268435490" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="27" pc="268435515" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="30" pc="268435537" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="39" pc="268435643" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="41" pc="268435654" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="42" pc="268435674" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="44" pc="268435721" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="47" pc="268435765" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="48" pc="268435816" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="49" pc="268435867" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="51" pc="268435918" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="61" pc="268436055" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="62" pc="268436106" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="63" pc="268436157" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="64" pc="268436208" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="65" pc="268436259" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="67" pc="268436310" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="68" pc="268436448" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="70" pc="268436519" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="71" pc="268436526" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="73" pc="268436539" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="74" pc="268436563" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="75" pc="268436577" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="76" pc="268436590" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="77" pc="268436604" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="78" pc="268436617" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="79" pc="268436631" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="81" pc="268436637" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="82" pc="268436653" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="3" lineNum="87" pc="268436699" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="4" lineNum="94" pc="268436754" symbol="onShow"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="5" lineNum="98" pc="268436759" symbol="onUpdate"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="5" lineNum="100" pc="268436763" symbol="onUpdate"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="6" lineNum="106" pc="268436784" symbol="onHide"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="8" lineNum="5" pc="268436789" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="8" lineNum="6" pc="268436793" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="9" lineNum="9" pc="268436812" symbol="onMenu"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="9" lineNum="10" pc="268436816" symbol="onMenu"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="9" lineNum="11" pc="268436900" symbol="onMenu"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="11" lineNum="14" pc="268436904" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="11" lineNum="15" pc="268436908" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="12" lineNum="19" pc="268436927" symbol="onStart"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="13" lineNum="24" pc="268436932" symbol="onStop"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="14" lineNum="28" pc="268436937" symbol="getInitialView"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="14" lineNum="29" pc="268436941" symbol="getInitialView"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="16" lineNum="7" pc="268437009" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="16" lineNum="8" pc="268437013" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="11" pc="268437032" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="13" pc="268437036" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="37" pc="268437133" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="16" pc="268437169" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="22" pc="268437269" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="25" pc="268437272" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="26" pc="268437293" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="29" pc="268437296" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="30" pc="268437317" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="33" pc="268437320" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="17" lineNum="34" pc="268437341" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="19" lineNum="9" pc="268437348" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="19" lineNum="10" pc="268437352" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="19" lineNum="11" pc="268437370" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="19" lineNum="12" pc="268437380" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="20" lineNum="15" pc="268437418" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="20" lineNum="16" pc="268437422" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="20" lineNum="17" pc="268437443" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="21" lineNum="20" pc="268437447" symbol="getSize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="21" lineNum="21" pc="268437451" symbol="getSize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="22" lineNum="24" pc="268437495" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="22" lineNum="25" pc="268437499" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="22" lineNum="26" pc="268437522" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="22" lineNum="29" pc="268437534" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="23" lineNum="32" pc="268437563" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="23" lineNum="33" pc="268437567" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="23" lineNum="34" pc="268437590" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="23" lineNum="37" pc="268437734" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="24" lineNum="40" pc="268437869" symbol="isDone"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="24" lineNum="41" pc="268437873" symbol="isDone"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="26" lineNum="10" pc="268437900" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="26" lineNum="11" pc="268437904" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="26" lineNum="12" pc="268437922" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="27" lineNum="15" pc="268437933" symbol="onCancel"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="27" lineNum="16" pc="268437937" symbol="onCancel"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="19" pc="268437966" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="20" pc="268437970" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="33" pc="268438116" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="35" pc="268438144" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="36" pc="268438170" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="38" pc="268438196" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="44" pc="268438299" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="28" lineNum="47" pc="268438325" symbol="onAccept"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="11" pc="268438350" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="12" pc="268438354" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="14" pc="268438372" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="15" pc="268438382" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="16" pc="268438392" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="18" pc="268438402" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="19" pc="268438409" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="20" pc="268438433" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="23" pc="268438460" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="24" pc="268438473" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="27" pc="268438496" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="30" lineNum="28" pc="268438509" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="31" lineNum="32" pc="268438526" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="31" lineNum="33" pc="268438530" symbol="getDrawable"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="32" lineNum="44" pc="268438678" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="32" lineNum="45" pc="268438682" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="32" lineNum="46" pc="268438704" symbol="getIndex"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="33" lineNum="49" pc="268438708" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="33" lineNum="50" pc="268438712" symbol="getValue"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="34" lineNum="53" pc="268438734" symbol="getSize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="34" lineNum="54" pc="268438738" symbol="getSize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="36" lineNum="6" pc="268438772" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="36" lineNum="7" pc="268438776" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="10" pc="268438795" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="12" pc="268438799" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="27" pc="268438877" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="14" pc="268438913" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="15" pc="268438934" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="16" pc="268439018" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="19" pc="268439021" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="20" pc="268439042" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="23" pc="268439045" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="37" lineNum="24" pc="268439073" symbol="onSelect"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\PickerResult.mc" id="39" lineNum="16" pc="268439105" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\PickerResult.mc" id="39" lineNum="17" pc="268439109" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\PickerResult.mc" id="39" lineNum="18" pc="268439122" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\PickerResult.mc" id="39" lineNum="19" pc="268439131" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="41" lineNum="5" pc="268439148" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="41" lineNum="6" pc="268439152" symbol="initialize"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="42" lineNum="10" pc="268439171" symbol="onLayout"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="42" lineNum="11" pc="268439175" symbol="onLayout"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="43" lineNum="17" pc="268439213" symbol="onShow"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="44" lineNum="21" pc="268439218" symbol="onUpdate"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="44" lineNum="23" pc="268439222" symbol="onUpdate"/>
-<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="45" lineNum="29" pc="268439243" symbol="onHide"/>
-<entry filename="Rez" id="51" lineNum="16" pc="268439248" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="18" pc="268439260" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="20" pc="268439273" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="21" pc="268439428" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="22" pc="268439583" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="23" pc="268439695" symbol="MainLayout"/>
-<entry filename="Rez" id="51" lineNum="25" pc="268439732" symbol="MainLayout"/>
-<entry filename="Rez" id="54" lineNum="38" pc="268439770" symbol="initialize"/>
-<entry filename="Rez" id="54" lineNum="39" pc="268439774" symbol="initialize"/>
-<entry filename="Rez" id="54" lineNum="40" pc="268439830" symbol="initialize"/>
-<entry filename="Rez" id="54" lineNum="41" pc="268439895" symbol="initialize"/>
-<entry filename="Rez" id="54" lineNum="42" pc="268439960" symbol="initialize"/>
-<entry filename="Rez" id="54" lineNum="43" pc="268440025" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="55" pc="268440091" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="56" pc="268440095" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="57" pc="268440151" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="58" pc="268440216" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="59" pc="268440281" symbol="initialize"/>
-<entry filename="Rez" id="56" lineNum="60" pc="268440346" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="3" lineNum="7" pc="268435456" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="3" lineNum="8" pc="268435460" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="11" pc="268435479" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="13" pc="268435483" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="37" pc="268435580" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="16" pc="268435616" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="22" pc="268435716" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="25" pc="268435719" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="26" pc="268435740" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="29" pc="268435743" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="30" pc="268435764" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="33" pc="268435767" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\AddMenuDelegate.mc" id="4" lineNum="34" pc="268435788" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="6" lineNum="9" pc="268435795" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="6" lineNum="10" pc="268435799" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="6" lineNum="11" pc="268435817" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="6" lineNum="12" pc="268435827" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="7" lineNum="15" pc="268435865" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="7" lineNum="16" pc="268435869" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="7" lineNum="17" pc="268435890" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="8" lineNum="20" pc="268435894" symbol="getSize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="8" lineNum="21" pc="268435898" symbol="getSize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="9" lineNum="24" pc="268435942" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="9" lineNum="25" pc="268435946" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="9" lineNum="26" pc="268435969" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="9" lineNum="29" pc="268435981" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="10" lineNum="32" pc="268436010" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="10" lineNum="33" pc="268436014" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="10" lineNum="34" pc="268436037" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="10" lineNum="37" pc="268436181" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="11" lineNum="40" pc="268436316" symbol="isDone"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\CharPickerFactory.mc" id="11" lineNum="41" pc="268436320" symbol="isDone"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="11" pc="268436347" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="12" pc="268436351" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="14" pc="268436369" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="15" pc="268436379" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="16" pc="268436389" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="18" pc="268436399" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="19" pc="268436406" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="20" pc="268436430" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="23" pc="268436457" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="24" pc="268436470" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="27" pc="268436493" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="13" lineNum="28" pc="268436506" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="14" lineNum="32" pc="268436523" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="14" lineNum="33" pc="268436527" symbol="getDrawable"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="15" lineNum="44" pc="268436675" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="15" lineNum="45" pc="268436679" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="15" lineNum="46" pc="268436701" symbol="getIndex"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="16" lineNum="49" pc="268436705" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="16" lineNum="50" pc="268436709" symbol="getValue"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="17" lineNum="53" pc="268436731" symbol="getSize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\NumberPickerFactory.mc" id="17" lineNum="54" pc="268436735" symbol="getSize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="19" lineNum="10" pc="268436769" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="19" lineNum="11" pc="268436773" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="19" lineNum="13" pc="268436791" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="19" lineNum="14" pc="268436833" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="17" pc="268436877" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="19" pc="268436881" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="40" pc="268436978" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="21" pc="268437014" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="22" pc="268437035" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="23" pc="268437093" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="26" pc="268437096" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="27" pc="268437117" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="30" pc="268437120" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="31" pc="268437141" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="32" pc="268437225" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="35" pc="268437228" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="36" pc="268437256" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="20" lineNum="37" pc="268437284" symbol="onSelect"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="22" lineNum="50" pc="268437291" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="22" lineNum="51" pc="268437295" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="23" lineNum="54" pc="268437314" symbol="onResponse"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="23" lineNum="55" pc="268437318" symbol="onResponse"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsMenuDelegate.mc" id="23" lineNum="57" pc="268437332" symbol="onResponse"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="18" pc="268437357" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="20" pc="268437361" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="22" pc="268437371" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="24" pc="268437371" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="25" pc="268437391" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="27" pc="268437416" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="30" pc="268437438" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="39" pc="268437544" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="41" pc="268437555" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="42" pc="268437575" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="44" pc="268437622" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="47" pc="268437666" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="48" pc="268437717" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="49" pc="268437768" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="51" pc="268437819" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="61" pc="268437956" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="62" pc="268438007" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="63" pc="268438058" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="64" pc="268438109" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="65" pc="268438160" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="67" pc="268438211" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="68" pc="268438349" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="70" pc="268438420" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="71" pc="268438427" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="73" pc="268438440" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="74" pc="268438464" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="75" pc="268438478" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="76" pc="268438491" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="77" pc="268438505" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="78" pc="268438518" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="79" pc="268438532" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="81" pc="268438538" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="82" pc="268438554" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="25" lineNum="87" pc="268438600" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="26" lineNum="94" pc="268438655" symbol="onShow"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="27" lineNum="98" pc="268438660" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="27" lineNum="100" pc="268438664" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePicker.mc" id="28" lineNum="106" pc="268438685" symbol="onHide"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="30" lineNum="5" pc="268438690" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="30" lineNum="6" pc="268438694" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="31" lineNum="9" pc="268438713" symbol="onMenu"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="31" lineNum="10" pc="268438717" symbol="onMenu"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsDelegate.mc" id="31" lineNum="11" pc="268438801" symbol="onMenu"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="33" lineNum="18" pc="268438805" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="33" lineNum="19" pc="268438809" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="33" lineNum="20" pc="268438827" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="34" lineNum="24" pc="268438858" symbol="onStart"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="35" lineNum="29" pc="268438863" symbol="onStop"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="36" lineNum="33" pc="268438868" symbol="getInitialView"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsApp.mc" id="36" lineNum="34" pc="268438872" symbol="getInitialView"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="12" pc="268438940" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="13" pc="268438944" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="14" pc="268438998" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="16" pc="268439011" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="17" pc="268439036" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="18" pc="268439058" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="20" pc="268439061" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="21" pc="268439068" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="22" pc="268439078" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="26" pc="268439085" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="38" lineNum="36" pc="268439219" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="39" lineNum="39" pc="268439300" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="39" lineNum="40" pc="268439304" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="39" lineNum="41" pc="268439344" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="39" lineNum="42" pc="268439356" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="40" lineNum="45" pc="268439377" symbol="addCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="40" lineNum="46" pc="268439381" symbol="addCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="40" lineNum="47" pc="268439410" symbol="addCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="40" lineNum="48" pc="268439426" symbol="addCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="41" lineNum="52" pc="268439456" symbol="removeCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="41" lineNum="53" pc="268439460" symbol="removeCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="41" lineNum="55" pc="268439513" symbol="removeCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="41" lineNum="56" pc="268439539" symbol="removeCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="41" lineNum="59" pc="268439595" symbol="removeCharacter"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="42" lineNum="63" pc="268439622" symbol="getTitle"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="42" lineNum="64" pc="268439626" symbol="getTitle"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="43" lineNum="67" pc="268439645" symbol="getTitleLength"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="43" lineNum="68" pc="268439649" symbol="getTitleLength"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="44" lineNum="71" pc="268439668" symbol="isDone"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePicker.mc" id="44" lineNum="72" pc="268439672" symbol="isDone"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="46" lineNum="7" pc="268439693" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="46" lineNum="8" pc="268439697" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="46" lineNum="9" pc="268439715" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="47" lineNum="12" pc="268439726" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="47" lineNum="13" pc="268439730" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="47" lineNum="14" pc="268439756" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="47" lineNum="17" pc="268439787" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="21" pc="268439806" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="22" pc="268439810" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="23" pc="268439839" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="24" pc="268439868" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="25" pc="268439903" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="26" pc="268439944" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="27" pc="268439962" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\WaypointNamePickerDelegate.mc" id="48" lineNum="28" pc="268440003" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="50" lineNum="10" pc="268440035" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="50" lineNum="11" pc="268440039" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="50" lineNum="12" pc="268440057" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="51" lineNum="15" pc="268440068" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="51" lineNum="16" pc="268440072" symbol="onCancel"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="19" pc="268440101" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="20" pc="268440105" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="33" pc="268440251" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="35" pc="268440279" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="36" pc="268440305" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="38" pc="268440331" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="44" pc="268440434" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="46" pc="268440460" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="47" pc="268440484" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\pickers\\DegreesCoordinatePickerDelegate.mc" id="52" lineNum="51" pc="268440538" symbol="onAccept"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="54" lineNum="9" pc="268440563" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="54" lineNum="10" pc="268440567" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="54" lineNum="12" pc="268440598" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="54" lineNum="13" pc="268440611" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="17" pc="268440629" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="18" pc="268440633" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="19" pc="268440658" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="20" pc="268440683" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="22" pc="268440708" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="23" pc="268440735" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="26" pc="268440739" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="27" pc="268440752" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="28" pc="268440774" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="55" lineNum="30" pc="268440806" symbol="saveDegrees"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="56" lineNum="42" pc="268440823" symbol="exportWaypointToSavedLocations"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="56" lineNum="43" pc="268440827" symbol="exportWaypointToSavedLocations"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="56" lineNum="45" pc="268440858" symbol="exportWaypointToSavedLocations"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="56" lineNum="46" pc="268440871" symbol="exportWaypointToSavedLocations"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\WaypointController.mc" id="56" lineNum="48" pc="268440918" symbol="exportWaypointToSavedLocations"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="58" lineNum="9" pc="268440953" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="58" lineNum="10" pc="268440957" symbol="initialize"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="59" lineNum="14" pc="268440976" symbol="onLayout"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="59" lineNum="15" pc="268440980" symbol="onLayout"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="60" lineNum="21" pc="268441018" symbol="onShow"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="61" lineNum="25" pc="268441023" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="61" lineNum="27" pc="268441027" symbol="onUpdate"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="62" lineNum="33" pc="268441048" symbol="onHide"/>
+<entry filename="D:\\src\\JustWaypoints\\source\\JustWaypointsView.mc" id="63" lineNum="36" pc="268441053" symbol="updateMenu"/>
+<entry filename="Rez" id="69" lineNum="16" pc="268441058" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="18" pc="268441070" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="20" pc="268441083" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="21" pc="268441238" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="22" pc="268441393" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="23" pc="268441505" symbol="MainLayout"/>
+<entry filename="Rez" id="69" lineNum="25" pc="268441542" symbol="MainLayout"/>
+<entry filename="Rez" id="72" lineNum="38" pc="268441580" symbol="initialize"/>
+<entry filename="Rez" id="72" lineNum="39" pc="268441584" symbol="initialize"/>
+<entry filename="Rez" id="72" lineNum="40" pc="268441640" symbol="initialize"/>
+<entry filename="Rez" id="72" lineNum="41" pc="268441705" symbol="initialize"/>
+<entry filename="Rez" id="72" lineNum="42" pc="268441770" symbol="initialize"/>
+<entry filename="Rez" id="72" lineNum="43" pc="268441835" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="55" pc="268441901" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="56" pc="268441905" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="57" pc="268441961" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="58" pc="268442026" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="59" pc="268442091" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="60" pc="268442156" symbol="initialize"/>
+<entry filename="Rez" id="74" lineNum="61" pc="268442244" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="64" symbol="LATITUDE"/>
+<entry field="true" id="83" symbol="LATITUDE"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8389626" method="true" symbol="onAccept"/>
-<entry field="true" id="27" symbol="mStop"/>
-<entry field="true" id="51" symbol="menu_label_add"/>
-<entry field="true" id="46" symbol="picker_char_ok"/>
+<entry field="true" id="35" symbol="mStop"/>
+<entry field="true" id="59" symbol="menu_label_add"/>
+<entry field="true" id="52" symbol="picker_char_ok"/>
 <entry id="8389346" symbol="text"/>
-<entry field="true" id="35" symbol="NO_STATUS"/>
-<entry id="78" symbol="menu_delete_selected"/>
-<entry field="true" id="44" symbol="menu_label_degrees"/>
-<entry id="43" method="true" symbol="MainLayout"/>
-<entry field="true" id="17" symbol="ID_LAST_LON_SS"/>
-<entry id="23" object="true" symbol="JustWaypointsMenuDelegate"/>
-<entry id="19" object="true" symbol="AddMenuDelegate"/>
-<entry field="true" id="54" symbol="menu_label_current"/>
-<entry field="true" id="58" symbol="menu_label_minutes"/>
-<entry field="true" id="29" symbol="mFormatString"/>
-<entry id="77" symbol="menu_delete_all"/>
-<entry field="true" id="61" symbol="mAddOk"/>
-<entry field="true" id="15" symbol="ID_LAST_LON_MM"/>
-<entry field="true" id="8389310" symbol="position"/>
-<entry id="22" object="true" symbol="NumberPickerFactory"/>
+<entry id="90" method="true" symbol="updateMenu"/>
+<entry id="100" symbol="menu_delete_selected"/>
+<entry field="true" id="48" symbol="menu_label_degrees"/>
+<entry id="47" method="true" symbol="MainLayout"/>
+<entry field="true" id="68" symbol="CHAR_SET"/>
+<entry field="true" id="22" symbol="ID_LAST_LON_SS"/>
+<entry id="12" object="true" symbol="JustWaypointsMenuDelegate"/>
+<entry id="9" object="true" symbol="AddMenuDelegate"/>
+<entry field="true" id="62" symbol="menu_label_current"/>
+<entry field="true" id="66" symbol="menu_label_minutes"/>
+<entry field="true" id="37" symbol="mFormatString"/>
+<entry id="97" symbol="menu_delete_all"/>
+<entry field="true" id="81" symbol="mAddOk"/>
+<entry field="true" id="20" symbol="ID_LAST_LON_MM"/>
+<entry id="11" object="true" symbol="NumberPickerFactory"/>
 <entry id="8390424" module="true" symbol="Storage"/>
-<entry field="true" id="13" symbol="ID_LAST_LON_DD"/>
-<entry id="76" symbol="menu_exit_app"/>
-<entry field="true" id="36" symbol="result"/>
+<entry field="true" id="32" symbol="&lt;globals/JustWaypointsMenuDelegate/&lt;&gt;_addNewWaypointMenu&gt;"/>
+<entry field="true" id="18" symbol="ID_LAST_LON_DD"/>
+<entry id="99" symbol="menu_exit_app"/>
+<entry id="98" symbol="menu_clean_storage"/>
 <entry id="8389629" method="true" symbol="getValue"/>
-<entry field="true" id="59" symbol="txt_empty_list"/>
+<entry field="true" id="67" symbol="txt_empty_list"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="45" symbol="menu_label_seconds"/>
-<entry field="true" id="39" symbol="id_app_icon"/>
-<entry field="true" id="34" symbol="REWRITE"/>
-<entry field="true" id="49" symbol="AppName"/>
-<entry field="true" id="55" symbol="menu_label_delete_selected"/>
-<entry id="73" symbol="addOk"/>
+<entry field="true" id="51" symbol="menu_label_seconds"/>
+<entry id="8389108" method="true" symbol="onResponse"/>
+<entry field="true" id="50" symbol="menu_sublabel_clean_storage"/>
+<entry field="true" id="43" symbol="id_app_icon"/>
+<entry id="30" object="true" symbol="WaypointController"/>
+<entry field="true" id="71" symbol="&lt;globals/WaypointNamePicker/&lt;&gt;_Factory&gt;"/>
+<entry field="true" id="56" symbol="AppName"/>
+<entry field="true" id="63" symbol="menu_label_delete_selected"/>
+<entry id="95" symbol="addOk"/>
 <entry id="8389080" method="true" symbol="onMenu"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8389345" symbol="rezId"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry field="true" id="50" symbol="menu_title_main"/>
+<entry field="true" id="58" symbol="menu_title_main"/>
+<entry field="true" id="49" symbol="picker_title_name"/>
+<entry field="true" id="25" symbol="WPCtrl"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388764" method="true" symbol="format"/>
-<entry id="63" method="true" symbol="isDone"/>
+<entry id="76" method="true" symbol="isDone"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
 <entry id="8389630" method="true" symbol="getSize"/>
-<entry id="38" module="true" symbol="Menus"/>
+<entry id="42" module="true" symbol="Menus"/>
+<entry field="true" id="54" symbol="txt_clear_storage"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="13" object="true" symbol="ClearStorageConfirmationDelegate"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="62" symbol="DONE"/>
-<entry field="true" id="52" symbol="menu_label_exit_app"/>
+<entry field="true" id="82" symbol="DONE"/>
+<entry field="true" id="60" symbol="menu_label_exit_app"/>
 <entry id="8389644" symbol="defaults"/>
-<entry id="18" object="true" symbol="JustWaypointsApp"/>
-<entry id="11" object="true" symbol="JustWaypointsDelegate"/>
-<entry field="true" id="9" symbol="FACTORY_COUNT"/>
-<entry id="24" object="true" symbol="PickerResult"/>
-<entry id="42" object="true" symbol="MainMenu"/>
-<entry field="true" id="32" symbol="OK"/>
+<entry field="true" id="69" symbol="MAX_TEXT_LEN"/>
+<entry id="26" object="true" symbol="JustWaypointsApp"/>
+<entry id="28" object="true" symbol="WaypointNamePickerDelegate"/>
+<entry id="16" object="true" symbol="JustWaypointsDelegate"/>
+<entry id="73" method="true" symbol="removeCharacter"/>
+<entry field="true" id="14" symbol="FACTORY_COUNT"/>
+<entry id="46" object="true" symbol="MainMenu"/>
+<entry field="true" id="40" symbol="mPicker"/>
+<entry field="true" id="77" symbol="waypoints"/>
+<entry field="true" id="24" symbol="ID_WAYPOINTS_LIST"/>
 <entry id="8389628" method="true" symbol="getDrawable"/>
 <entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="66" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;LAT_DIRECTIONS&gt;"/>
+<entry field="true" id="85" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;LAT_DIRECTIONS&gt;"/>
 <entry id="8389619" method="true" symbol="onSelect"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry field="true" id="47" symbol="picker_title_lon"/>
-<entry id="69" symbol="menu_degrees"/>
+<entry field="true" id="88" symbol="&lt;globals/JustWaypointsView/&lt;&gt;_waypointsMenu&gt;"/>
+<entry id="79" method="true" symbol="exportWaypointToSavedLocations"/>
+<entry field="true" id="53" symbol="picker_title_lon"/>
+<entry id="91" symbol="menu_degrees"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="65" symbol="LONGITUDE"/>
-<entry id="72" symbol="menu_current"/>
-<entry id="70" symbol="menu_minutes"/>
-<entry field="true" id="40" symbol="LauncherIcon"/>
+<entry field="true" id="84" symbol="LONGITUDE"/>
+<entry id="94" symbol="menu_current"/>
+<entry id="92" symbol="menu_minutes"/>
+<entry field="true" id="44" symbol="LauncherIcon"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry field="true" id="28" symbol="mIncrement"/>
-<entry field="true" id="16" symbol="ID_LAST_LAT_SS"/>
-<entry field="true" id="67" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;LON_DIRECTIONS&gt;"/>
-<entry field="true" id="56" symbol="picker_title_lat"/>
-<entry field="true" id="33" symbol="CANCEL"/>
+<entry field="true" id="36" symbol="mIncrement"/>
+<entry field="true" id="23" symbol="ID_LAST_WP_NAME"/>
+<entry field="true" id="21" symbol="ID_LAST_LAT_SS"/>
+<entry field="true" id="86" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;LON_DIRECTIONS&gt;"/>
+<entry field="true" id="89" symbol="&lt;globals/JustWaypointsView/&lt;&gt;_waypointsMenuDelegate&gt;"/>
+<entry field="true" id="64" symbol="picker_title_lat"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="14" symbol="ID_LAST_LAT_MM"/>
-<entry field="true" id="26" symbol="mStart"/>
+<entry field="true" id="19" symbol="ID_LAST_LAT_MM"/>
+<entry field="true" id="34" symbol="mStart"/>
+<entry id="8389953" module="true" symbol="PersistedContent"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="53" symbol="menu_label_delete_all"/>
+<entry field="true" id="61" symbol="menu_label_delete_all"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry id="21" object="true" symbol="DegreesCoordinatePickerDelegate"/>
-<entry field="true" id="12" symbol="ID_LAST_LAT_DD"/>
+<entry id="75" method="true" symbol="getTitleLength"/>
+<entry id="29" object="true" symbol="DegreesCoordinatePickerDelegate"/>
+<entry field="true" id="17" symbol="ID_LAST_LAT_DD"/>
 <entry field="true" id="8388892" symbol="name"/>
 <entry id="8389541" method="true" symbol="onCancel"/>
-<entry id="20" object="true" symbol="CharPickerFactory"/>
-<entry field="true" id="57" symbol="txt_press_menu"/>
-<entry id="71" symbol="menu_seconds"/>
+<entry id="10" object="true" symbol="CharPickerFactory"/>
+<entry field="true" id="65" symbol="txt_press_menu"/>
+<entry id="93" symbol="menu_seconds"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry id="10" object="true" symbol="DegreesCoordinatePicker"/>
+<entry id="15" object="true" symbol="DegreesCoordinatePicker"/>
 <entry field="true" id="8389128" symbol="mFont"/>
+<entry id="78" method="true" symbol="saveDegrees"/>
 <entry id="8389347" symbol="color"/>
-<entry id="74" symbol="menu_add"/>
-<entry id="75" symbol="delete_all"/>
-<entry id="30" method="true" symbol="getIndex"/>
-<entry field="true" id="48" symbol="menu_title_add"/>
-<entry id="37" module="true" symbol="Layouts"/>
-<entry field="true" id="31" symbol="_type"/>
+<entry id="96" symbol="menu_add"/>
+<entry id="27" object="true" symbol="WaypointNamePicker"/>
+<entry id="38" method="true" symbol="getIndex"/>
+<entry field="true" id="55" symbol="menu_title_add"/>
+<entry id="74" method="true" symbol="getTitle"/>
+<entry field="true" id="57" symbol="menu_label_clean_storage"/>
+<entry id="72" method="true" symbol="addCharacter"/>
+<entry id="41" module="true" symbol="Layouts"/>
+<entry field="true" id="39" symbol="_type"/>
 <entry id="8389643" symbol="pattern"/>
 <entry id="8388642" module="true" symbol="Position"/>
-<entry id="41" object="true" symbol="AddMenu"/>
-<entry id="25" object="true" symbol="JustWaypointsView"/>
+<entry field="true" id="33" symbol="&lt;globals/JustWaypointsMenuDelegate/&lt;&gt;_clearStorageConfirmText&gt;"/>
+<entry id="45" object="true" symbol="AddMenu"/>
+<entry id="31" object="true" symbol="JustWaypointsView"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="60" symbol="mCharacterSet"/>
-<entry field="true" id="68" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;_type&gt;"/>
+<entry field="true" id="80" symbol="mCharacterSet"/>
+<entry field="true" id="87" symbol="&lt;globals/DegreesCoordinatePicker/&lt;&gt;_type&gt;"/>
 <entry id="8388635" module="true" symbol="Application"/>
 <entry field="true" id="8389642" symbol="title"/>
+<entry field="true" id="70" symbol="&lt;globals/WaypointNamePicker/&lt;&gt;_TypedText&gt;"/>
 </symbolTable>
 <localVars>
-<entry endPc="268436683" name="digit" stackId="9" startPc="268436637"/>
-<entry endPc="268436696" name="i" stackId="8" startPc="268436563"/>
-<entry endPc="268436696" name="charArray" stackId="7" startPc="268436526"/>
-<entry endPc="268436753" name="factories" stackId="4" startPc="268435460"/>
-<entry endPc="268436753" name="titleStr" stackId="2" startPc="268435460"/>
-<entry endPc="268436753" name="defaults" stackId="5" startPc="268435460"/>
-<entry endPc="268436753" name="title" stackId="3" startPc="268435460"/>
-<entry endPc="268436753" name="coordinate" stackId="6" startPc="268435460"/>
-<entry endPc="268436754" name="type" stackId="1" startPc="268435456"/>
-<entry endPc="268436784" name="dc" stackId="1" startPc="268436759"/>
-<entry endPc="268436932" name="state" stackId="1" startPc="268436927"/>
-<entry endPc="268436937" name="state" stackId="1" startPc="268436932"/>
-<entry endPc="268437348" name="item" stackId="1" startPc="268437032"/>
-<entry endPc="268437418" name="characterSet" stackId="1" startPc="268437348"/>
-<entry endPc="268437418" name="options" stackId="2" startPc="268437348"/>
-<entry endPc="268437446" name="index" stackId="2" startPc="268437422"/>
-<entry endPc="268437447" name="value" stackId="1" startPc="268437418"/>
-<entry endPc="268437563" name="index" stackId="1" startPc="268437495"/>
-<entry endPc="268437869" name="index" stackId="1" startPc="268437563"/>
-<entry endPc="268437869" name="selected" stackId="2" startPc="268437563"/>
-<entry endPc="268437900" name="value" stackId="1" startPc="268437869"/>
-<entry endPc="268437933" name="type" stackId="1" startPc="268437900"/>
-<entry endPc="268438349" name="coordinate" stackId="2" startPc="268437970"/>
-<entry endPc="268438350" name="values" stackId="1" startPc="268437966"/>
-<entry endPc="268438526" name="increment" stackId="3" startPc="268438350"/>
-<entry endPc="268438526" name="options" stackId="4" startPc="268438350"/>
-<entry endPc="268438526" name="stop" stackId="2" startPc="268438350"/>
-<entry endPc="268438526" name="start" stackId="1" startPc="268438350"/>
-<entry endPc="268438678" name="index" stackId="1" startPc="268438526"/>
-<entry endPc="268438678" name="selected" stackId="2" startPc="268438526"/>
-<entry endPc="268438707" name="index" stackId="2" startPc="268438682"/>
-<entry endPc="268438708" name="value" stackId="1" startPc="268438678"/>
-<entry endPc="268438734" name="index" stackId="1" startPc="268438708"/>
-<entry endPc="268439105" name="item" stackId="1" startPc="268438795"/>
-<entry endPc="268439213" name="dc" stackId="1" startPc="268439171"/>
-<entry endPc="268439243" name="dc" stackId="1" startPc="268439218"/>
-<entry endPc="268439769" name="rez_cmp_local_text_1860345130" stackId="3" startPc="268439260"/>
-<entry endPc="268439769" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268439260"/>
-<entry endPc="268439769" name="rez_cmp_local_bitmap_id_app_icon" stackId="5" startPc="268439260"/>
-<entry endPc="268439769" name="rez_cmp_local_text_2136201206" stackId="4" startPc="268439260"/>
-<entry endPc="268439770" name="dc" stackId="1" startPc="268439248"/>
+<entry endPc="268435795" name="item" stackId="1" startPc="268435479"/>
+<entry endPc="268435865" name="characterSet" stackId="1" startPc="268435795"/>
+<entry endPc="268435865" name="options" stackId="2" startPc="268435795"/>
+<entry endPc="268435893" name="index" stackId="2" startPc="268435869"/>
+<entry endPc="268435894" name="value" stackId="1" startPc="268435865"/>
+<entry endPc="268436010" name="index" stackId="1" startPc="268435942"/>
+<entry endPc="268436316" name="index" stackId="1" startPc="268436010"/>
+<entry endPc="268436316" name="selected" stackId="2" startPc="268436010"/>
+<entry endPc="268436347" name="value" stackId="1" startPc="268436316"/>
+<entry endPc="268436523" name="increment" stackId="3" startPc="268436347"/>
+<entry endPc="268436523" name="options" stackId="4" startPc="268436347"/>
+<entry endPc="268436523" name="stop" stackId="2" startPc="268436347"/>
+<entry endPc="268436523" name="start" stackId="1" startPc="268436347"/>
+<entry endPc="268436675" name="index" stackId="1" startPc="268436523"/>
+<entry endPc="268436675" name="selected" stackId="2" startPc="268436523"/>
+<entry endPc="268436704" name="index" stackId="2" startPc="268436679"/>
+<entry endPc="268436705" name="value" stackId="1" startPc="268436675"/>
+<entry endPc="268436731" name="index" stackId="1" startPc="268436705"/>
+<entry endPc="268437291" name="item" stackId="1" startPc="268436877"/>
+<entry endPc="268437357" name="response" stackId="1" startPc="268437314"/>
+<entry endPc="268438584" name="digit" stackId="9" startPc="268438538"/>
+<entry endPc="268438597" name="i" stackId="8" startPc="268438464"/>
+<entry endPc="268438597" name="charArray" stackId="7" startPc="268438427"/>
+<entry endPc="268438654" name="factories" stackId="4" startPc="268437361"/>
+<entry endPc="268438654" name="titleStr" stackId="2" startPc="268437361"/>
+<entry endPc="268438654" name="defaults" stackId="5" startPc="268437361"/>
+<entry endPc="268438654" name="title" stackId="3" startPc="268437361"/>
+<entry endPc="268438654" name="coordinate" stackId="6" startPc="268437361"/>
+<entry endPc="268438655" name="type" stackId="1" startPc="268437357"/>
+<entry endPc="268438685" name="dc" stackId="1" startPc="268438660"/>
+<entry endPc="268438863" name="state" stackId="1" startPc="268438858"/>
+<entry endPc="268438868" name="state" stackId="1" startPc="268438863"/>
+<entry endPc="268439299" name="titleText" stackId="2" startPc="268438944"/>
+<entry endPc="268439299" name="lastName" stackId="1" startPc="268438944"/>
+<entry endPc="268439299" name="defaults" stackId="3" startPc="268438944"/>
+<entry endPc="268439377" name="dc" stackId="1" startPc="268439300"/>
+<entry endPc="268439456" name="character" stackId="1" startPc="268439377"/>
+<entry endPc="268439693" name="value" stackId="1" startPc="268439668"/>
+<entry endPc="268439726" name="picker" stackId="1" startPc="268439693"/>
+<entry endPc="268440035" name="values" stackId="1" startPc="268439806"/>
+<entry endPc="268440068" name="type" stackId="1" startPc="268440035"/>
+<entry endPc="268440538" name="picker" stackId="3" startPc="268440434"/>
+<entry endPc="268440562" name="coordinate" stackId="2" startPc="268440105"/>
+<entry endPc="268440563" name="values" stackId="1" startPc="268440101"/>
+<entry endPc="268440822" name="name" stackId="1" startPc="268440633"/>
+<entry endPc="268440822" name="lat" stackId="2" startPc="268440633"/>
+<entry endPc="268440822" name="coordinates" stackId="4" startPc="268440633"/>
+<entry endPc="268440822" name="lon" stackId="3" startPc="268440633"/>
+<entry endPc="268440952" name="location" stackId="3" startPc="268440827"/>
+<entry endPc="268440952" name="coords" stackId="4" startPc="268440827"/>
+<entry endPc="268440953" name="name" stackId="1" startPc="268440823"/>
+<entry endPc="268440953" name="coordinates" stackId="2" startPc="268440823"/>
+<entry endPc="268441018" name="dc" stackId="1" startPc="268440976"/>
+<entry endPc="268441048" name="dc" stackId="1" startPc="268441023"/>
+<entry endPc="268441579" name="rez_cmp_local_text_1050858643" stackId="4" startPc="268441070"/>
+<entry endPc="268441579" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268441070"/>
+<entry endPc="268441579" name="rez_cmp_local_text_2003135174" stackId="3" startPc="268441070"/>
+<entry endPc="268441579" name="rez_cmp_local_bitmap_id_app_icon" stackId="5" startPc="268441070"/>
+<entry endPc="268441580" name="dc" stackId="1" startPc="268441058"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry offset="350" parentId="globals" symbolId="JustWaypointsMenuDelegate" type="class"/>
-<dataEntry offset="405" parentId="globals" symbolId="NumberPickerFactory" type="class"/>
-<dataEntry offset="524" parentId="globals" symbolId="DegreesCoordinatePickerDelegate" type="class"/>
-<dataEntry offset="595" parentId="globals" symbolId="PickerResult" type="class"/>
-<dataEntry offset="698" parentId="globals" symbolId="JustWaypointsDelegate" type="class"/>
-<dataEntry offset="753" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="832" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="879" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="926" parentId="Menus" symbolId="MainMenu" type="class"/>
-<dataEntry offset="973" parentId="Menus" symbolId="AddMenu" type="class"/>
-<dataEntry offset="1020" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="1051" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="1090" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="1121" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="1280" parentId="globals" symbolId="AddMenuDelegate" type="class"/>
-<dataEntry offset="1335" parentId="globals" symbolId="CharPickerFactory" type="class"/>
-<dataEntry offset="1446" parentId="globals" symbolId="DegreesCoordinatePicker" type="class"/>
-<dataEntry offset="1557" parentId="globals" symbolId="JustWaypointsView" type="class"/>
-<dataEntry offset="1636" parentId="globals" symbolId="JustWaypointsApp" type="class"/>
+<dataEntry offset="414" parentId="globals" symbolId="JustWaypointsMenuDelegate" type="class"/>
+<dataEntry offset="485" parentId="globals" symbolId="NumberPickerFactory" type="class"/>
+<dataEntry offset="604" parentId="globals" symbolId="DegreesCoordinatePickerDelegate" type="class"/>
+<dataEntry offset="675" parentId="globals" symbolId="WaypointNamePickerDelegate" type="class"/>
+<dataEntry offset="746" parentId="globals" symbolId="JustWaypointsDelegate" type="class"/>
+<dataEntry offset="801" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="880" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="927" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="974" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry offset="1021" parentId="Menus" symbolId="AddMenu" type="class"/>
+<dataEntry offset="1068" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="1099" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="1138" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="1169" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="1360" parentId="globals" symbolId="AddMenuDelegate" type="class"/>
+<dataEntry offset="1415" parentId="globals" symbolId="WaypointNamePicker" type="class"/>
+<dataEntry offset="1542" parentId="globals" symbolId="WaypointController" type="class"/>
+<dataEntry offset="1613" parentId="globals" symbolId="CharPickerFactory" type="class"/>
+<dataEntry offset="1724" parentId="globals" symbolId="DegreesCoordinatePicker" type="class"/>
+<dataEntry offset="1835" parentId="globals" symbolId="JustWaypointsView" type="class"/>
+<dataEntry offset="1938" parentId="globals" symbolId="JustWaypointsApp" type="class"/>
+<dataEntry offset="2009" parentId="globals" symbolId="ClearStorageConfirmationDelegate" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
+<functionEntry accessMode="public" name="initialize" parent="AddMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSelect" parent="AddMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CharPickerFactory">
+<param id="characterSet"/>
+<param id="options"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIndex" parent="CharPickerFactory">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getSize" parent="CharPickerFactory">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getValue" parent="CharPickerFactory">
+<param id="index"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getDrawable" parent="CharPickerFactory">
+<param id="index"/>
+<param id="selected"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="isDone" parent="CharPickerFactory">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="NumberPickerFactory">
+<param id="start"/>
+<param id="stop"/>
+<param id="increment"/>
+<param id="options"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getDrawable" parent="NumberPickerFactory">
+<param id="index"/>
+<param id="selected"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIndex" parent="NumberPickerFactory">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getValue" parent="NumberPickerFactory">
+<param id="index"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getSize" parent="NumberPickerFactory">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="JustWaypointsMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSelect" parent="JustWaypointsMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ClearStorageConfirmationDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onResponse" parent="ClearStorageConfirmationDelegate">
+<param id="response"/>
+<documentation/>
+</functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="DegreesCoordinatePicker">
 <param id="type"/>
 <documentation/>
@@ -375,36 +564,39 @@
 <functionEntry accessMode="public" name="getInitialView" parent="JustWaypointsApp">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="initialize" parent="AddMenuDelegate">
+<functionEntry accessMode="public" name="initialize" parent="WaypointNamePicker">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="onSelect" parent="AddMenuDelegate">
-<param id="item"/>
+<functionEntry accessMode="public" name="onUpdate" parent="WaypointNamePicker">
+<param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="initialize" parent="CharPickerFactory">
-<param id="characterSet"/>
-<param id="options"/>
+<functionEntry accessMode="public" name="addCharacter" parent="WaypointNamePicker">
+<param id="character"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getIndex" parent="CharPickerFactory">
+<functionEntry accessMode="public" name="removeCharacter" parent="WaypointNamePicker">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTitle" parent="WaypointNamePicker">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTitleLength" parent="WaypointNamePicker">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="isDone" parent="WaypointNamePicker">
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getSize" parent="CharPickerFactory">
+<functionEntry accessMode="public" name="initialize" parent="WaypointNamePickerDelegate">
+<param id="picker"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getValue" parent="CharPickerFactory">
-<param id="index"/>
+<functionEntry accessMode="public" name="onCancel" parent="WaypointNamePickerDelegate">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getDrawable" parent="CharPickerFactory">
-<param id="index"/>
-<param id="selected"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="isDone" parent="CharPickerFactory">
-<param id="value"/>
+<functionEntry accessMode="public" name="onAccept" parent="WaypointNamePickerDelegate">
+<param id="values"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="DegreesCoordinatePickerDelegate">
@@ -418,37 +610,15 @@
 <param id="values"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="initialize" parent="NumberPickerFactory">
-<param id="start"/>
-<param id="stop"/>
-<param id="increment"/>
-<param id="options"/>
+<functionEntry accessMode="public" name="initialize" parent="WaypointController">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getDrawable" parent="NumberPickerFactory">
-<param id="index"/>
-<param id="selected"/>
+<functionEntry accessMode="public" name="saveDegrees" parent="WaypointController">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="getIndex" parent="NumberPickerFactory">
-<param id="value"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="getValue" parent="NumberPickerFactory">
-<param id="index"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="getSize" parent="NumberPickerFactory">
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="initialize" parent="JustWaypointsMenuDelegate">
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="onSelect" parent="JustWaypointsMenuDelegate">
-<param id="item"/>
-<documentation/>
-</functionEntry>
-<functionEntry accessMode="public" name="initialize" parent="PickerResult">
+<functionEntry accessMode="public" name="exportWaypointToSavedLocations" parent="WaypointController">
+<param id="name"/>
+<param id="coordinates"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="JustWaypointsView">
@@ -466,6 +636,9 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onHide" parent="JustWaypointsView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="updateMenu" parent="JustWaypointsView">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="MainLayout" parent="Layouts">

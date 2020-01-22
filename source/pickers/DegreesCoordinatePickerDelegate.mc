@@ -42,6 +42,10 @@ class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
 	        );
         } else {
             Storage.setValue(ID_LAST_LON_DD, coordinate);
+            
+            var picker = new WaypointNamePicker();
+            WatchUi.pushView(picker, new WaypointNamePickerDelegate(picker), WatchUi.SLIDE_LEFT);
+            
         }
         
         System.println("coordinate = " + coordinate);    
