@@ -1,0 +1,6 @@
+<menu2 id="AddMenu" title="@Strings.menu_title_add">
+    <menu-item id="menu_degrees" label="@Strings.menu_label_degrees"></menu-item>
+    <menu-item id="menu_minutes" label="@Strings.menu_label_minutes"></menu-item>
+    <menu-item id="menu_seconds" label="@Strings.menu_label_seconds"></menu-item>
+    <menu-item id="menu_current" label="@Strings.menu_label_current"></menu-item>
+</menu2>

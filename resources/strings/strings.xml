@@ -1,0 +1,31 @@
+<strings>
+    <string id="AppName">JustWaypoints</string>
+
+    <!-- Text prompts -->
+
+    <string id="txt_press_menu">Click the menu button</string>
+    <string id="txt_empty_list">No waypoints</string>
+    
+    <!-- Main Menu -->
+    
+    <string id="menu_title_main">Menu</string>
+    <string id="menu_label_add">Add New</string>
+    <string id="menu_label_delete_all">Delete All</string>
+    <string id="menu_label_delete_selected">Delete Selected</string>
+    <string id="menu_label_exit_app">Exit App</string>
+    
+    <!-- Add Menu -->
+    
+    <string id="menu_title_add">Add New</string>
+    <string id="menu_label_degrees">Add DDD.DDDDD</string>
+    <string id="menu_label_minutes">Add DDD:MM.MMMM</string>
+    <string id="menu_label_seconds">Add DDD:MM:SS.SS</string>
+    <string id="menu_label_current">Add Current</string>
+
+    <!-- Degrees Coordinate Picker -->
+    
+    <string id="picker_title_lat">Latitude</string>
+    <string id="picker_title_lon">Longitude</string>
+    <string id="picker_char_ok">OK</string>
+    
+</strings>
