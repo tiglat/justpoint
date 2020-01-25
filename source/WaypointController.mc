@@ -27,7 +27,14 @@ class WaypointController {
 
         var position = lat + ", " + lon;
         mWaypoints.put(name, position);
-        Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
+
+        try {
+            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
+        } catch (ex instanceof Toybox.Lang.StorageFullException) {
+            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            return;
+        }
+
         exportWaypointToSavedLocationsDeg(name, position);
     }
 
@@ -44,6 +51,12 @@ class WaypointController {
         System.println("Coordinates to convert: " + position);
 
         var location = $.parsePosition(position, Position.GEO_DEG);
+
+        if (location == null) {
+            WatchUi.pushView(new MessageView("Could not export to Saved Locations"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            return;
+        }
+
         PersistedContent.saveWaypoint(location, {:name => name});
     }
 

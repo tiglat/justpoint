@@ -1,13 +1,16 @@
 using Toybox.WatchUi;
+using Toybox.Application.Storage as Storage;
 
 class JustWaypointsView extends WatchUi.View {
 
-    private var _waypointsMenu;
-    private var _waypointsMenuDelegate;
+    private var mWaypointsMenu;
+    private var mWaypointsMenuDelegate;
+    private var mWaypointsMenuTitle;
 
 
     function initialize() {
         View.initialize();
+        mWaypointsMenuTitle = WatchUi.loadResource(Rez.Strings.menu_title_waypoints);
     }
 
     // Load your resources here
@@ -19,6 +22,7 @@ class JustWaypointsView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
+        updateMenu();
     }
 
     // Update the view
@@ -35,22 +39,31 @@ class JustWaypointsView extends WatchUi.View {
 
     function updateMenu() {
 
-//        waypointsMenu = new WatchUi.Menu();
-//        waypointsMenu.setTitle(menuTitleStr);
-//
-//        var pointsIt = PersistedContent.getWaypoints();
-//
-//        var point = pointsIt.next();
-//
-//        while (point != null) {
-//            waypointsMenu.addItem(point.getName(), point.getId());
-//            point = pointsIt.next();
-//        }
-//
-//        waypointsMenu.addItem(menuSaveStr, :item_save);
-//        waypointsMenu.addItem(menuExitStr, :item_exit);
+        mWaypointsMenu = new WatchUi.Menu2({:title=>mWaypointsMenuTitle});
 
+        var points = Storage.getValue($.ID_WAYPOINTS_LIST);
 
+        if (points == null || points.isEmpty()) {
+            return;
+        }
+
+        var wpNames = points.keys();
+
+        for (var i = 0; i < wpNames.size(); i++) {
+           mWaypointsMenu.addItem(
+                new MenuItem(
+                    wpNames[i],
+                    points.get(wpNames[i]),
+                    wpNames[i],
+                    {}
+                )
+            );
+        }
+
+        WatchUi.pushView(mWaypointsMenu, new WaypointsMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
     }
 
 }
+
+
+
