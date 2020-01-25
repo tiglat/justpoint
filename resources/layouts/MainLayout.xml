@@ -1,5 +1,5 @@
 <layout id="MainLayout">
     <label x="center" y="60" text="@Strings.txt_press_menu" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"/>
     <label x="center" y="20" text="@Strings.txt_empty_list" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL"/>
-    <bitmap id="id_app_icon" x="center" y="100" filename="../drawables/pin_128px.png" />
+  <!--  <bitmap id="id_app_icon" x="center" y="100" filename="../drawables/pin_128px.png" /> -->
 </layout>

@@ -18,6 +18,7 @@ class JustWaypointsApp extends Application.AppBase {
     function initialize() {
         AppBase.initialize();
         WPCtrl = new WaypointController();
+        
     }
 
     // onStart() is called on application start up

@@ -32,25 +32,25 @@ class JustWaypointsView extends WatchUi.View {
     // memory.
     function onHide() {
     }
-    
+
     function updateMenu() {
-        
+
 //        waypointsMenu = new WatchUi.Menu();
 //        waypointsMenu.setTitle(menuTitleStr);
-//        
+//
 //        var pointsIt = PersistedContent.getWaypoints();
 //
 //        var point = pointsIt.next();
 //
 //        while (point != null) {
 //            waypointsMenu.addItem(point.getName(), point.getId());
-//            point = pointsIt.next();    
-//        } 
-//        
+//            point = pointsIt.next();
+//        }
+//
 //        waypointsMenu.addItem(menuSaveStr, :item_save);
 //        waypointsMenu.addItem(menuExitStr, :item_exit);
 
-        
+
     }
 
 }

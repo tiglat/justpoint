@@ -5,11 +5,11 @@ using Toybox.Application.Storage as Storage;
 
 class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
 
-    var _type;
+    var mType;
 
     function initialize(type) {
         PickerDelegate.initialize();
-        _type = type;
+        mType = type;
     }
 
     function onCancel() {
@@ -17,8 +17,8 @@ class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
     }
 
     function onAccept(values) {
-        var coordinate = (values[0].equals("N") || values[0].equals("E") ? "+" : "-") 
-            //+ (values[1] == 0 ? "" : values[1]) 
+        var coordinate = (values[0].equals("N") || values[0].equals("E") ? "+" : "-")
+            //+ (values[1] == 0 ? "" : values[1])
             //+ (values[2] == 0 ? "" : values[2])
             + values[1]
             + values[2]
@@ -29,26 +29,24 @@ class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
             + values[7]
             + values[8]
             + values[9];
-    
-        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 
-        if (_type == DegreesCoordinatePicker.LATITUDE) {
-            Storage.setValue(ID_LAST_LAT_DD, coordinate);
-            
-	        WatchUi.pushView(
-	            new DegreesCoordinatePicker(DegreesCoordinatePicker.LONGITUDE), 
-	            new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LONGITUDE), 
-	            WatchUi.SLIDE_LEFT
-	        );
+        if (mType == DegreesCoordinatePicker.LATITUDE) {
+            Storage.setValue($.ID_LAST_LAT_DD, coordinate);
+
+            WatchUi.pushView(
+                new DegreesCoordinatePicker(DegreesCoordinatePicker.LONGITUDE),
+                new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LONGITUDE),
+                WatchUi.SLIDE_IMMEDIATE
+            );
         } else {
-            Storage.setValue(ID_LAST_LON_DD, coordinate);
-            
+            Storage.setValue($.ID_LAST_LON_DD, coordinate);
+
             var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new WaypointNamePickerDelegate(picker), WatchUi.SLIDE_LEFT);
-            
+            WatchUi.pushView(picker, new WaypointNamePickerDelegate(picker, Position.GEO_DEG), WatchUi.SLIDE_IMMEDIATE);
+
         }
-        
-        System.println("coordinate = " + coordinate);    
+
+        System.println("coordinate = " + coordinate);
     }
 
 }

@@ -3,9 +3,9 @@ using Toybox.Application.Storage as Storage;
 
 class WaypointNamePicker extends WatchUi.Picker {
 
-    const CHAR_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz12345678790._-+*!@#&<>";
+    const CHAR_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz12345678790._-+*@#&<>";
     const MAX_TEXT_LEN = 15;
-    
+
     private var _TypedText;
     private var _Factory;
 
@@ -25,9 +25,9 @@ class WaypointNamePicker extends WatchUi.Picker {
 
         mTitle = new WatchUi.Text(
             {
-                :text=>titleText, 
-                :locX =>WatchUi.LAYOUT_HALIGN_CENTER, 
-                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, 
+                :text=>titleText,
+                :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_TINY
             }
@@ -44,8 +44,8 @@ class WaypointNamePicker extends WatchUi.Picker {
 
     function addCharacter(character) {
         if (_TypedText.length() < MAX_TEXT_LEN) {
-	        _TypedText += character;
-	        mTitle.setText(_TypedText);
+            _TypedText += character;
+            mTitle.setText(_TypedText);
         }
     }
 

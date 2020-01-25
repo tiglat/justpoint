@@ -9,16 +9,16 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
      }
 
     function onSelect(item) {
-    
+
         switch (item.getId()) {
             case :menu_degrees: {
-                
+
                 WatchUi.pushView(
-                    new DegreesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),  
-                    new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LATITUDE), 
-                    WatchUi.SLIDE_LEFT
+                    new DegreesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
+                    new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LATITUDE),
+                    WatchUi.SLIDE_IMMEDIATE
                 );
-                
+
                 break;
             }
             case :menu_minutes: {
@@ -37,7 +37,7 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
                 System.println("Unsupported menu item: " + item.getId());
             }
         }
-        
+
     }
 
 }
