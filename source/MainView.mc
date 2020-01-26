@@ -5,17 +5,12 @@ class MainView extends WatchUi.View {
 
     private var mMainMenu;
     private var mWaypointsMenuDelegate;
-    private var mWaypointsMenuTitle;
+    private var mMainMenuTitle;
 
 
     function initialize() {
         View.initialize();
-        mWaypointsMenuTitle = WatchUi.loadResource(Rez.Strings.menu_title_waypoints);
-    }
-
-    // Load your resources here
-    function onLayout(dc) {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        mMainMenuTitle = WatchUi.loadResource(Rez.Strings.menu_title_main);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -23,12 +18,14 @@ class MainView extends WatchUi.View {
     // loading resources into memory.
     function onShow() {
         updateMenu();
+        System.println("MainView onShow");
     }
 
     // Update the view
     function onUpdate(dc) {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        System.println("MainView onUpdate");
     }
 
     // Called when this View is removed from the screen. Save the
@@ -39,7 +36,7 @@ class MainView extends WatchUi.View {
 
     function updateMenu() {
 
-        mMainMenu = new WatchUi.Menu2({:title=>mWaypointsMenuTitle});
+        mMainMenu = new WatchUi.Menu2({:title=>mMainMenuTitle});
 
         var points = Storage.getValue($.ID_WAYPOINTS_LIST);
 
@@ -47,10 +44,14 @@ class MainView extends WatchUi.View {
             var wpNames = points.keys();
 
             for (var i = 0; i < wpNames.size(); i++) {
-               mMainMenu.addItem(
-                    new MenuItem(
+                var position = points.get(wpNames[i]);
+                var formatSeparatorIndex = position.find(",");
+                var label = position.substring(formatSeparatorIndex + 1, position.length());
+
+                mMainMenu.addItem(
+                    new WatchUi.MenuItem(
                         wpNames[i],
-                        points.get(wpNames[i]),
+                        label,
                         wpNames[i],
                         {}
                     )
@@ -58,10 +59,10 @@ class MainView extends WatchUi.View {
             }
         }
 
-        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_add, null, :menu_add_id, {}));
-        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_delete_all, null, :menu_delete_all_id, {}));
-        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_clean_storage, null, :menu_clean_storage_id, {}));
-        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_exit_app, null, :menu_exit_app_id, {}));
+        mMainMenu.addItem(new WatchUi.MenuItem(Rez.Strings.menu_label_add, null, :menu_add_id, {}));
+        mMainMenu.addItem(new WatchUi.MenuItem(Rez.Strings.menu_label_delete_all, null, :menu_delete_all_id, {}));
+        mMainMenu.addItem(new WatchUi.MenuItem(Rez.Strings.menu_label_clean_storage, null, :menu_clean_storage_id, {}));
+        mMainMenu.addItem(new WatchUi.MenuItem(Rez.Strings.menu_label_exit_app, null, :menu_exit_app_id, {}));
 
         WatchUi.pushView(mMainMenu, new MainMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
     }

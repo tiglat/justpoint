@@ -1,5 +1,6 @@
 using Toybox.System;
 using Toybox.Position;
+using Toybox.PersistedContent;
 
 function parsePosition(position, format) {
 
@@ -28,8 +29,8 @@ function parsePosition(position, format) {
     switch (format) {
         case Position.GEO_DEG:
         {
-            latFloat = lat.toFloat();
-            lonFloat = lon.toFloat();
+            latFloat = latStr.toFloat();
+            lonFloat = lonStr.toFloat();
 
             if (latFloat == null || lonFloat == null) {
                 System.println("Could not convert latitude or longitude to float.");
@@ -56,4 +57,20 @@ function parsePosition(position, format) {
     return location;
 
 
+}
+
+function getPersistedContentItem(name) {
+
+    var iter = PersistedContent.getAppWaypoints();
+
+    var item = iter.next();
+
+    while (item != null) {
+        if (item.getName().equals(name)) {
+            return item;
+        }
+        item = iter.next();
+    }
+
+    return null;
 }

@@ -5,24 +5,18 @@
 
     <string id="txt_press_menu">Click the menu button</string>
     <string id="txt_empty_list">No waypoints</string>
-    <string id="txt_clear_storage">Clear App Cache?</string>
+    <string id="txt_clear_storage">Clear App Storage?</string>
     <string id="txt_save">Save?</string>
     
     <!-- Main Menu -->
-    
-    <string id="menu_title_main">Menu</string>
+
+    <string id="menu_title_main">Waypoints</string>
     <string id="menu_label_add" >Add New</string>
     <string id="menu_label_delete_all">Delete All</string>
-    <string id="menu_label_delete_selected">Delete Selected</string>
     <string id="menu_label_clean_storage">Clean Storage</string>
     <string id="menu_sublabel_clean_storage">Saved Locations are kept</string>
     <string id="menu_label_exit_app">Exit App</string>
-
-    <string id="menu_add">menu_add_id</string>
-    <string id="menu_delete_all">menu_delete_all_id</string>
-    <string id="menu_clean_storage">menu_clean_storage_id</string>
-    <string id="menu_exit_app">menu_exit_app_id</string>
-
+    
     <!-- Add Menu -->
     
     <string id="menu_title_add">Add New</string>
@@ -31,9 +25,13 @@
     <string id="menu_label_seconds">Add DDD:MM:SS.SS</string>
     <string id="menu_label_current">Add Current</string>
 
-    <!-- Waypoints Menu -->
-    
-    <string id="menu_title_waypoints">Waypoints</string>
+    <!-- Waypoint Menu -->
+
+    <string id="menu_title_waypoint">Waypoints</string>
+    <string id="menu_label_edit_lat" >Edit Latitude</string>
+    <string id="menu_label_edit_lon">Edit Longitude</string>
+    <string id="menu_label_rename">Rename</string>
+    <string id="menu_label_delete">Delete</string>
 
     <!-- Degrees Coordinate Picker -->
     

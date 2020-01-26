@@ -13,9 +13,11 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
         switch (item.getId()) {
             case :menu_degrees: {
 
+                System.println("ADD NEW WAYPOINT MENU ==> Add in DD.DDDDD");
+
                 WatchUi.pushView(
                     new DegreesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
-                    new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LATITUDE),
+                    new DegreesCoordinatePickerAddWaypointDelegate(DegreesCoordinatePicker.LATITUDE),
                     WatchUi.SLIDE_IMMEDIATE
                 );
 

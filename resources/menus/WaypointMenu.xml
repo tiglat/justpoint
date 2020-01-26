@@ -1,0 +1,6 @@
+<menu2 id="WaypointMenu" title="@Strings.menu_title_waypoint">
+    <menu-item id="menu_edit_lat" label="@Strings.menu_label_edit_lat" />
+    <menu-item id="menu_edit_lon" label="@Strings.menu_label_edit_lon" />
+    <menu-item id="menu_rename" label="@Strings.menu_label_rename" />
+    <menu-item id="menu_delete" label="@Strings.menu_label_delete"/>
+</menu2>

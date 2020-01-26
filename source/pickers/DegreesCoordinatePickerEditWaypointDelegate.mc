@@ -3,7 +3,7 @@ using Toybox.WatchUi;
 using Toybox.Application.Storage as Storage;
 
 
-class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
+class DegreesCoordinatePickerEditWaypointDelegate extends WatchUi.PickerDelegate {
 
     var mType;
 
@@ -17,6 +17,8 @@ class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
     }
 
     function onAccept(values) {
+        System.println("DegreesCoordinatePickerEditWaypointDelegate.onAccept");
+
         var coordinate = (values[0].equals("N") || values[0].equals("E") ? "+" : "-")
             //+ (values[1] == 0 ? "" : values[1])
             //+ (values[2] == 0 ? "" : values[2])
@@ -32,21 +34,20 @@ class DegreesCoordinatePickerDelegate extends WatchUi.PickerDelegate {
 
         if (mType == DegreesCoordinatePicker.LATITUDE) {
             Storage.setValue($.ID_LAST_LAT_DD, coordinate);
-
-            WatchUi.pushView(
-                new DegreesCoordinatePicker(DegreesCoordinatePicker.LONGITUDE),
-                new DegreesCoordinatePickerDelegate(DegreesCoordinatePicker.LONGITUDE),
-                WatchUi.SLIDE_IMMEDIATE
-            );
         } else {
             Storage.setValue($.ID_LAST_LON_DD, coordinate);
-
-            var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new WaypointNamePickerDelegate(picker, Position.GEO_DEG), WatchUi.SLIDE_IMMEDIATE);
-
         }
 
-        System.println("coordinate = " + coordinate);
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        System.println("Updated coordinate = " + coordinate);
+
+        var prompt = WatchUi.loadResource(Rez.Strings.txt_save);
+
+        WatchUi.pushView(
+            new WatchUi.Confirmation(prompt + " " + coordinate),
+            new SaveWaypointConfirmationDelegate(Position.GEO_DEG),
+            WatchUi.SLIDE_IMMEDIATE
+        );
     }
 
 }

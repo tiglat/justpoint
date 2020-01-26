@@ -1,7 +1,0 @@
-<menu2 id="MainMenu" title="@Strings.menu_title_main">
-    <menu-item id="menu_add" label="@Strings.menu_label_add" />
-    <menu-item id="menu_delete_all" label="@Strings.menu_label_delete_all" />
-    <menu-item id="menu_delete_selected" label="@Strings.menu_label_delete_selected" />
-    <menu-item id="menu_clean_storage" label="@Strings.menu_label_clean_storage" subLabel="@Strings.menu_sublabel_clean_storage"/>
-    <menu-item id="menu_exit_app" label="@Strings.menu_label_exit_app"/>
-</menu2>

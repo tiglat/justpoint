@@ -1,7 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Application.Storage as Storage;
 
-class WaypointNamePickerDelegate extends WatchUi.PickerDelegate {
+class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
     private var mPicker;
     private var mType;
 
@@ -27,7 +27,9 @@ class WaypointNamePickerDelegate extends WatchUi.PickerDelegate {
             Storage.setValue(ID_LAST_WP_NAME, mPicker.getTitle());
             System.println("Waypoint name = " + mPicker.getTitle());
 
-            // remove all picker views
+            // bring main view to foreground in order to update its content
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
@@ -40,8 +42,10 @@ class WaypointNamePickerDelegate extends WatchUi.PickerDelegate {
                 lon = Storage.getValue(ID_LAST_LON_DD);
             }
 
+            var prompt = WatchUi.loadResource(Rez.Strings.txt_save);
+
             WatchUi.pushView(
-                new WatchUi.Confirmation(Rez.Strings.txt_save + " " +lat + ", " + lon),
+                new WatchUi.Confirmation(prompt + " " +lat + ", " + lon),
                 new SaveWaypointConfirmationDelegate(mType),
                 WatchUi.SLIDE_IMMEDIATE
             );
@@ -52,22 +56,3 @@ class WaypointNamePickerDelegate extends WatchUi.PickerDelegate {
 }
 
 
-class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
-
-    private var mType;
-
-    function initialize(type) {
-        ConfirmationDelegate.initialize();
-        mType = type;
-    }
-
-    function onResponse(response) {
-        if (response == CONFIRM_YES) {
-            if (mType == Position.GEO_DEG) {
-                WPCtrl.saveDegrees();
-            }
-
-        }
-    }
-
-}
