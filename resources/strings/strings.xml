@@ -17,7 +17,12 @@
     <string id="menu_label_clean_storage">Clean Storage</string>
     <string id="menu_sublabel_clean_storage">Saved Locations are kept</string>
     <string id="menu_label_exit_app">Exit App</string>
-    
+
+    <string id="menu_add">menu_add_id</string>
+    <string id="menu_delete_all">menu_delete_all_id</string>
+    <string id="menu_clean_storage">menu_clean_storage_id</string>
+    <string id="menu_exit_app">menu_exit_app_id</string>
+
     <!-- Add Menu -->
     
     <string id="menu_title_add">Add New</string>

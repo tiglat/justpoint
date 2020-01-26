@@ -1,9 +1,9 @@
 using Toybox.WatchUi;
 using Toybox.Application.Storage as Storage;
 
-class JustWaypointsView extends WatchUi.View {
+class MainView extends WatchUi.View {
 
-    private var mWaypointsMenu;
+    private var mMainMenu;
     private var mWaypointsMenuDelegate;
     private var mWaypointsMenuTitle;
 
@@ -39,28 +39,31 @@ class JustWaypointsView extends WatchUi.View {
 
     function updateMenu() {
 
-        mWaypointsMenu = new WatchUi.Menu2({:title=>mWaypointsMenuTitle});
+        mMainMenu = new WatchUi.Menu2({:title=>mWaypointsMenuTitle});
 
         var points = Storage.getValue($.ID_WAYPOINTS_LIST);
 
-        if (points == null || points.isEmpty()) {
-            return;
+        if (points != null && !points.isEmpty()) {
+            var wpNames = points.keys();
+
+            for (var i = 0; i < wpNames.size(); i++) {
+               mMainMenu.addItem(
+                    new MenuItem(
+                        wpNames[i],
+                        points.get(wpNames[i]),
+                        wpNames[i],
+                        {}
+                    )
+                );
+            }
         }
 
-        var wpNames = points.keys();
+        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_add, null, :menu_add_id, {}));
+        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_delete_all, null, :menu_delete_all_id, {}));
+        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_clean_storage, null, :menu_clean_storage_id, {}));
+        mMainMenu.addItem(new MenuItem(Rez.Strings.menu_label_exit_app, null, :menu_exit_app_id, {}));
 
-        for (var i = 0; i < wpNames.size(); i++) {
-           mWaypointsMenu.addItem(
-                new MenuItem(
-                    wpNames[i],
-                    points.get(wpNames[i]),
-                    wpNames[i],
-                    {}
-                )
-            );
-        }
-
-        WatchUi.pushView(mWaypointsMenu, new WaypointsMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
+        WatchUi.pushView(mMainMenu, new MainMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
     }
 
 }

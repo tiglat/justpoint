@@ -13,12 +13,12 @@ const ID_WAYPOINTS_LIST = "Waypoints";
 
 var WPCtrl;
 
-class JustWaypointsApp extends Application.AppBase {
+class App extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
         WPCtrl = new WaypointController();
-        
+
     }
 
     // onStart() is called on application start up
@@ -32,7 +32,7 @@ class JustWaypointsApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [ new JustWaypointsView(), new JustWaypointsDelegate() ];
+        return [ new MainView(), new WatchUi.BehaviorDelegate() ];
     }
 
 }
