@@ -26,6 +26,15 @@ class WaypointController {
             return;
         }
 
+        var index = name.find(",");
+        if (index != null) {
+            // rename operation
+            var prevName = name.substring(0, index);
+            mWaypoints.remove(prevName);
+            $.removeWaypointFromPersistedContent(prevName);
+            name = name.substring(index + 1, name.length());
+        }
+
         var position = lat + "," + lon;
         var waypointValue = "D," + position;
         mWaypoints.put(name, waypointValue);
@@ -36,6 +45,8 @@ class WaypointController {
             WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
             return;
         }
+
+        System.println("saveDegrees: name= " + name + ", position= " + position);
 
         exportWaypointToSavedLocationsDeg(name, position);
     }
@@ -52,12 +63,7 @@ class WaypointController {
     private function exportWaypointToSavedLocationsDeg(name, position) {
         System.println("exportWaypointToSavedLocationsDeg: Before conversion: " + position);
 
-        var point = $.getPersistedContentItem(name);
-
-        if (point != null) {
-            System.println("The same point exists. It will be removed.");
-            point.remove();
-        }
+        $.removeWaypointFromPersistedContent(name);
 
         var location = $.parsePosition(position, Position.GEO_DEG);
 

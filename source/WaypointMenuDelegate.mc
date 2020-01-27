@@ -58,7 +58,13 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
 
         mLatitude = position.substring(0, index);
         mLongitude = position.substring(index + 1, position.length());
-     }
+    }
+
+    function onBack() {
+        //remove waipoint menu and main menu to update the main menu
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+    }
 
     function onSelect(item) {
 
@@ -110,11 +116,34 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
             case :menu_rename: {
                 System.println("WAYPOINT MENU ==> Rename ");
 
+                switch (mPositionFormat) {
+                    case Position.GEO_DEG:
+                    {
+                        Storage.setValue($.ID_LAST_LAT_DD, mLatitude);
+                        Storage.setValue($.ID_LAST_LON_DD, mLongitude);
+                        Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                        var picker = new WaypointNamePicker();
+                        WatchUi.pushView(picker, new NamePickerEditWaypointDelegate(picker, Position.GEO_DEG), WatchUi.SLIDE_IMMEDIATE);
+
+                        break;
+                    }
+                }
 
                 break;
             }
             case :menu_delete: {
                 System.println("WAYPOINT MENU ==> Delete");
+
+                Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+                var prompt = WatchUi.loadResource(Rez.Strings.txt_delete);
+
+                WatchUi.pushView(
+                    new WatchUi.Confirmation(prompt + " " + mWaypointName + "?"),
+                    new DeleteWaypointConfirmationDelegate(mWaypointName),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
                 break;
             }
             default: {

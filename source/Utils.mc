@@ -74,3 +74,14 @@ function getPersistedContentItem(name) {
 
     return null;
 }
+
+function removeWaypointFromPersistedContent(name) {
+    var point = $.getPersistedContentItem(name);
+
+    if (point != null) {
+        System.println("removeWaypointFromPersistedContent: point is removed");
+        point.remove();
+    } else {
+        System.println("removeWaypointFromPersistedContent: Could not delete because the point is absent.");
+    }
+}
