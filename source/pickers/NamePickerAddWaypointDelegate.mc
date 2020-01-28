@@ -37,9 +37,18 @@ class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             var lat = "";
             var lon = "";
 
-            if (mType == Position.GEO_DEG) {
-                lat = Storage.getValue(ID_LAST_LAT_DD);
-                lon = Storage.getValue(ID_LAST_LON_DD);
+            switch (mType) {
+                case Position.GEO_DEG: {
+                    lat = Storage.getValue(ID_LAST_LAT_DD);
+                    lon = Storage.getValue(ID_LAST_LON_DD);
+                    break;
+                }
+
+                case Position.GEO_DM: {
+                    lat = Storage.getValue(ID_LAST_LAT_DM);
+                    lon = Storage.getValue(ID_LAST_LON_DM);
+                    break;
+                }
             }
 
             var prompt = WatchUi.loadResource(Rez.Strings.txt_save);

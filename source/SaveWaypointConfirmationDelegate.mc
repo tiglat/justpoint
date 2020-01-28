@@ -13,11 +13,20 @@ class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 
     function onResponse(response) {
         if (response == CONFIRM_YES) {
-            if (mType == Position.GEO_DEG) {
-                WPCtrl.saveDegrees();
-                System.println("Waypoint is saved");
-            }
 
+            switch (mType) {
+                case Position.GEO_DEG: {
+                    WPCtrl.saveDegrees();
+                    System.println("Waypoint is saved");
+                    break;
+                }
+
+                case Position.GEO_DM: {
+                    WPCtrl.saveDM();
+                    System.println("Waypoint is saved");
+                    break;
+                }
+            }
         }
     }
 

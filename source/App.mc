@@ -5,10 +5,10 @@ using Toybox.Application.Storage as Storage;
 
 const ID_LAST_LAT_DD    = "LastLatDeg";
 const ID_LAST_LON_DD    = "LastLonDeg";
-const ID_LAST_LAT_MM    = "LastLatMin";
-const ID_LAST_LON_MM    = "LastLonMin";
-const ID_LAST_LAT_SS    = "LastLatSec";
-const ID_LAST_LON_SS    = "LastLonSec";
+const ID_LAST_LAT_DM    = "LastLatDM";
+const ID_LAST_LON_DM    = "LastLonDM";
+const ID_LAST_LAT_DMS   = "LastLatDMS";
+const ID_LAST_LON_DMS   = "LastLonDMS";
 const ID_LAST_WP_NAME   = "LastWpName";
 const ID_WAYPOINTS_LIST = "Waypoints";
 

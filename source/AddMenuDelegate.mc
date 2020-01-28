@@ -24,7 +24,14 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
                 break;
             }
             case :menu_minutes: {
-                System.println("Selected menu minutes");
+                System.println("ADD NEW WAYPOINT MENU ==> Add in DD DD.DDDD");
+
+                WatchUi.pushView(
+                    new MinutesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
+                    new MinutesCoordinatePickerAddWaypointDelegate(DegreesCoordinatePicker.LATITUDE),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
                 break;
             }
             case :menu_seconds: {

@@ -51,6 +51,41 @@ class WaypointController {
         exportWaypointToSavedLocationsDeg(name, position);
     }
 
+    function saveDM() {
+        var name = Storage.getValue($.ID_LAST_WP_NAME);
+        var lat  = Storage.getValue($.ID_LAST_LAT_DM);
+        var lon  = Storage.getValue($.ID_LAST_LON_DM);
+
+        if (name == null || lat == null || lon == null) {
+            System.println("saveDM: some of input values is null");
+            return;
+        }
+
+        var index = name.find(",");
+        if (index != null) {
+            // rename operation
+            var prevName = name.substring(0, index);
+            mWaypoints.remove(prevName);
+            $.removeWaypointFromPersistedContent(prevName);
+            name = name.substring(index + 1, name.length());
+        }
+
+        var position = lat + "," + lon;
+        var waypointValue = "M," + position;
+        mWaypoints.put(name, waypointValue);
+
+        try {
+            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
+        } catch (ex instanceof Toybox.Lang.StorageFullException) {
+            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            return;
+        }
+
+        System.println("saveDM: name= " + name + ", position= " + position);
+
+        exportWaypointToSavedLocationsDM(name, position);
+    }
+
 //    function update() {
 //    }
 //
@@ -77,4 +112,20 @@ class WaypointController {
         PersistedContent.saveWaypoint(location, {:name => name});
     }
 
+    private function exportWaypointToSavedLocationsDM(name, position) {
+        System.println("exportWaypointToSavedLocationsDM: Before conversion: " + position);
+
+        $.removeWaypointFromPersistedContent(name);
+
+        var location = $.parsePosition(position, Position.GEO_DM);
+
+        if (location == null) {
+            System.println("parsePosition result is null");
+            WatchUi.pushView(new MessageView("Could not export to Saved Locations"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            return;
+        }
+
+        System.println("exportWaypointToSavedLocationsDM: After conversion: " + location.toDegrees());
+        PersistedContent.saveWaypoint(location, {:name => name});
+    }
 }

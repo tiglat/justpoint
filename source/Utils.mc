@@ -39,6 +39,18 @@ function parsePosition(position, format) {
 
             break;
         }
+        case Position.GEO_DM:
+        {
+            latFloat = convertDm(latStr);
+            lonFloat = convertDm(lonStr);
+
+            if (latFloat == null || lonFloat == null) {
+                System.println("Could not convert latitude or longitude to float.");
+                return null;
+            }
+
+            break;
+        }
     }
 
     var location = new Position.Location(
@@ -57,6 +69,27 @@ function parsePosition(position, format) {
     return location;
 
 
+}
+
+// convert coordinate from GEO_DM format to GEO_DEG
+function convertDm(pos) {
+
+    var index = pos.find(":");
+
+    if (index == null) {
+        return 0;
+    }
+
+    var deg = pos.substring(0, index);
+    var degFloat = deg.toFloat();
+    var min = pos.substring(index + 1, pos.length());
+
+    var minFloat = min.toFloat();
+    var minInDeg = minFloat / 60.0;
+
+    var posFloat = degFloat + minInDeg;
+
+    return posFloat;
 }
 
 function getPersistedContentItem(name) {
