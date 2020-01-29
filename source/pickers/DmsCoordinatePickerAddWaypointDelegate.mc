@@ -3,7 +3,7 @@ using Toybox.WatchUi;
 using Toybox.Application.Storage as Storage;
 
 
-class MinutesCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
+class DmsCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
 
     var mType;
 
@@ -26,25 +26,26 @@ class MinutesCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate 
             + ":"
             + values[5]
             + values[6]
-            + "."
+            + ":"
             + values[8]
             + values[9]
-            + values[10]
-            + values[11];
+            + "."
+            + values[11]
+            + values[12];
 
-        if (mType == MinutesCoordinatePicker.LATITUDE) {
-            Storage.setValue($.ID_LAST_LAT_DM, coordinate);
+        if (mType == $.LATITUDE) {
+            Storage.setValue($.ID_LAST_LAT_DMS, coordinate);
 
             WatchUi.pushView(
-                new MinutesCoordinatePicker(DegreesCoordinatePicker.LONGITUDE),
-                new MinutesCoordinatePickerAddWaypointDelegate(DegreesCoordinatePicker.LONGITUDE),
+                new DmsCoordinatePicker($.LONGITUDE),
+                new DmsCoordinatePickerAddWaypointDelegate($.LONGITUDE),
                 WatchUi.SLIDE_IMMEDIATE
             );
         } else {
-            Storage.setValue($.ID_LAST_LON_DM, coordinate);
+            Storage.setValue($.ID_LAST_LON_DMS, coordinate);
 
             var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DM), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DMS), WatchUi.SLIDE_IMMEDIATE);
 
         }
 

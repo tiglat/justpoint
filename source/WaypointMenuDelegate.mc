@@ -80,8 +80,8 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
                         Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
 
                         WatchUi.pushView(
-                            new DegreesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
-                            new DegreesCoordinatePickerEditWaypointDelegate(DegreesCoordinatePicker.LATITUDE),
+                            new DegCoordinatePicker($.LATITUDE),
+                            new DegCoordinatePickerEditWaypointDelegate($.LATITUDE),
                             WatchUi.SLIDE_IMMEDIATE
                         );
 
@@ -102,8 +102,8 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
                         Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
 
                         WatchUi.pushView(
-                            new DegreesCoordinatePicker(DegreesCoordinatePicker.LONGITUDE),
-                            new DegreesCoordinatePickerEditWaypointDelegate(DegreesCoordinatePicker.LONGITUDE),
+                            new DegCoordinatePicker($.LONGITUDE),
+                            new DegCoordinatePickerEditWaypointDelegate($.LONGITUDE),
                             WatchUi.SLIDE_IMMEDIATE
                         );
 

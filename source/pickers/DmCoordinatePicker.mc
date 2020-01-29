@@ -3,12 +3,7 @@ using Toybox.Application.Storage as Storage;
 
 const DM_FACTORY_COUNT = 12;
 
-class MinutesCoordinatePicker extends WatchUi.Picker {
-
-    enum {
-        LATITUDE,
-        LONGITUDE
-    }
+class DmCoordinatePicker extends WatchUi.Picker {
 
     private const LAT_DIRECTIONS = "NS";
     private const LON_DIRECTIONS = "EW";

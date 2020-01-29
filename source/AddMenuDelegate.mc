@@ -16,8 +16,8 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
                 System.println("ADD NEW WAYPOINT MENU ==> Add in DD.DDDDD");
 
                 WatchUi.pushView(
-                    new DegreesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
-                    new DegreesCoordinatePickerAddWaypointDelegate(DegreesCoordinatePicker.LATITUDE),
+                    new DegCoordinatePicker($.LATITUDE),
+                    new DegCoordinatePickerAddWaypointDelegate($.LATITUDE),
                     WatchUi.SLIDE_IMMEDIATE
                 );
 
@@ -27,15 +27,22 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
                 System.println("ADD NEW WAYPOINT MENU ==> Add in DD DD.DDDD");
 
                 WatchUi.pushView(
-                    new MinutesCoordinatePicker(DegreesCoordinatePicker.LATITUDE),
-                    new MinutesCoordinatePickerAddWaypointDelegate(DegreesCoordinatePicker.LATITUDE),
+                    new DmCoordinatePicker($.LATITUDE),
+                    new DmCoordinatePickerAddWaypointDelegate($.LATITUDE),
                     WatchUi.SLIDE_IMMEDIATE
                 );
 
                 break;
             }
             case :menu_seconds: {
-                System.println("Selected menu seconds");
+                System.println("ADD NEW WAYPOINT MENU ==> Add in DD MM SS.SS");
+
+                WatchUi.pushView(
+                    new DmsCoordinatePicker($.LATITUDE),
+                    new DmsCoordinatePickerAddWaypointDelegate($.LATITUDE),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
                 break;
             }
             case :menu_current: {

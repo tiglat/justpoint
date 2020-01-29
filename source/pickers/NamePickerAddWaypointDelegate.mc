@@ -3,12 +3,12 @@ using Toybox.Application.Storage as Storage;
 
 class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
     private var mPicker;
-    private var mType;
+    private var mFormat;
 
-    function initialize(picker, type) {
+    function initialize(picker, format) {
         PickerDelegate.initialize();
         mPicker = picker;
-        mType = type;
+        mFormat = format;
     }
 
     function onCancel() {
@@ -34,28 +34,14 @@ class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 
-            var lat = "";
-            var lon = "";
-
-            switch (mType) {
-                case Position.GEO_DEG: {
-                    lat = Storage.getValue(ID_LAST_LAT_DD);
-                    lon = Storage.getValue(ID_LAST_LON_DD);
-                    break;
-                }
-
-                case Position.GEO_DM: {
-                    lat = Storage.getValue(ID_LAST_LAT_DM);
-                    lon = Storage.getValue(ID_LAST_LON_DM);
-                    break;
-                }
-            }
+            var lat = getLastLatitude(mFormat);
+            var lon = getLastLongitude(mFormat);
 
             var prompt = WatchUi.loadResource(Rez.Strings.txt_save);
 
             WatchUi.pushView(
                 new WatchUi.Confirmation(prompt + " " +lat + ", " + lon),
-                new SaveWaypointConfirmationDelegate(mType),
+                new SaveWaypointConfirmationDelegate(mFormat),
                 WatchUi.SLIDE_IMMEDIATE
             );
 

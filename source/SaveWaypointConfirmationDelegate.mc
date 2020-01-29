@@ -17,13 +17,19 @@ class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             switch (mType) {
                 case Position.GEO_DEG: {
                     WPCtrl.saveDegrees();
-                    System.println("Waypoint is saved");
+                    System.println("DEG Waypoint is saved");
                     break;
                 }
 
                 case Position.GEO_DM: {
                     WPCtrl.saveDM();
-                    System.println("Waypoint is saved");
+                    System.println("DM Waypoint is saved");
+                    break;
+                }
+
+                case Position.GEO_DMS: {
+                    WPCtrl.saveDMS();
+                    System.println("DMS Waypoint is saved");
                     break;
                 }
             }

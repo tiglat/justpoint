@@ -1,6 +1,7 @@
 using Toybox.System;
 using Toybox.Position;
 using Toybox.PersistedContent;
+using Toybox.Application.Storage as Storage;
 
 function parsePosition(position, format) {
 
@@ -51,6 +52,18 @@ function parsePosition(position, format) {
 
             break;
         }
+        case Position.GEO_DMS:
+        {
+            latFloat = convertDms(latStr);
+            lonFloat = convertDms(lonStr);
+
+            if (latFloat == null || lonFloat == null) {
+                System.println("Could not convert latitude or longitude to float.");
+                return null;
+            }
+
+            break;
+        }
     }
 
     var location = new Position.Location(
@@ -82,14 +95,41 @@ function convertDm(pos) {
 
     var deg = pos.substring(0, index);
     var degFloat = deg.toFloat();
-    var min = pos.substring(index + 1, pos.length());
 
+    var min = pos.substring(index + 1, pos.length());
     var minFloat = min.toFloat();
     var minInDeg = minFloat / 60.0;
 
-    var posFloat = degFloat + minInDeg;
+    return degFloat + minInDeg;
+}
 
-    return posFloat;
+// convert coordinate from GEO_DMS format to GEO_DEG
+function convertDms(pos) {
+
+    var index = pos.find(":");
+    if (index == null) {
+        return 0;
+    }
+
+    var deg = pos.substring(0, index);
+    var degFloat = deg.toFloat();
+
+    var remain = pos.substring(index + 1, pos.length());
+
+    index = remain.find(":");
+    if (index == null) {
+        return 0;
+    }
+
+    var min = remain.substring(0, index);
+    var minFloat = min.toFloat();
+    var minInDeg = minFloat / 60.0;
+
+    var sec = remain.substring(index + 1, remain.length());
+    var secFloat = sec.toFloat();
+    var secInDeg = secFloat / 3600.0;
+
+    return degFloat + minInDeg + secInDeg;
 }
 
 function getPersistedContentItem(name) {
@@ -116,5 +156,42 @@ function removeWaypointFromPersistedContent(name) {
         point.remove();
     } else {
         System.println("removeWaypointFromPersistedContent: Could not delete because the point is absent.");
+    }
+}
+
+function getLastLatitude(format) {
+    switch (format) {
+        case Position.GEO_DEG: {
+            return Storage.getValue(ID_LAST_LAT_DD);
+            break;
+        }
+
+        case Position.GEO_DM: {
+            return Storage.getValue(ID_LAST_LAT_DM);
+            break;
+        }
+
+        case Position.GEO_DMS: {
+            return Storage.getValue(ID_LAST_LAT_DMS);
+            break;
+        }
+    }
+}
+
+function getLastLongitude(format) {
+    switch (format) {
+        case Position.GEO_DEG: {
+            return Storage.getValue(ID_LAST_LON_DD);
+        }
+
+        case Position.GEO_DM: {
+            return Storage.getValue(ID_LAST_LON_DM);
+            break;
+        }
+
+        case Position.GEO_DMS: {
+            return Storage.getValue(ID_LAST_LON_DMS);
+            break;
+        }
     }
 }

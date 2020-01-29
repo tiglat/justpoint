@@ -3,12 +3,7 @@ using Toybox.Application.Storage as Storage;
 
 const DEG_FACTORY_COUNT = 10;
 
-class DegreesCoordinatePicker extends WatchUi.Picker {
-
-    enum {
-        LATITUDE,
-        LONGITUDE
-    }
+class DegCoordinatePicker extends WatchUi.Picker {
 
     private const LAT_DIRECTIONS = "NS";
     private const LON_DIRECTIONS = "EW";

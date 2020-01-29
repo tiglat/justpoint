@@ -26,29 +26,16 @@ class WaypointController {
             return;
         }
 
-        var index = name.find(",");
-        if (index != null) {
-            // rename operation
-            var prevName = name.substring(0, index);
-            mWaypoints.remove(prevName);
-            $.removeWaypointFromPersistedContent(prevName);
-            name = name.substring(index + 1, name.length());
-        }
+        name = removeWaypointToRename(name);
 
         var position = lat + "," + lon;
         var waypointValue = "D," + position;
         mWaypoints.put(name, waypointValue);
-
-        try {
-            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
-        } catch (ex instanceof Toybox.Lang.StorageFullException) {
-            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
-            return;
-        }
+        saveWaypointsList();
 
         System.println("saveDegrees: name= " + name + ", position= " + position);
 
-        exportWaypointToSavedLocationsDeg(name, position);
+        exportWaypointToSavedLocations(name, position, Position.GEO_DEG);
     }
 
     function saveDM() {
@@ -61,29 +48,36 @@ class WaypointController {
             return;
         }
 
-        var index = name.find(",");
-        if (index != null) {
-            // rename operation
-            var prevName = name.substring(0, index);
-            mWaypoints.remove(prevName);
-            $.removeWaypointFromPersistedContent(prevName);
-            name = name.substring(index + 1, name.length());
-        }
+        name = removeWaypointToRename(name);
 
         var position = lat + "," + lon;
-        var waypointValue = "M," + position;
-        mWaypoints.put(name, waypointValue);
-
-        try {
-            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
-        } catch (ex instanceof Toybox.Lang.StorageFullException) {
-            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
-            return;
-        }
+        mWaypoints.put(name, "M," + position);
+        saveWaypointsList();
 
         System.println("saveDM: name= " + name + ", position= " + position);
 
-        exportWaypointToSavedLocationsDM(name, position);
+        exportWaypointToSavedLocations(name, position, Position.GEO_DM);
+    }
+
+    function saveDMS() {
+        var name = Storage.getValue($.ID_LAST_WP_NAME);
+        var lat  = Storage.getValue($.ID_LAST_LAT_DMS);
+        var lon  = Storage.getValue($.ID_LAST_LON_DMS);
+
+        if (name == null || lat == null || lon == null) {
+            System.println("saveDMS: some of input values is null");
+            return;
+        }
+
+        name = removeWaypointToRename(name);
+
+        var position = lat + "," + lon;
+        mWaypoints.put(name, "S," + position);
+        saveWaypointsList();
+
+        System.println("saveDMS: name= " + name + ", position= " + position);
+
+        exportWaypointToSavedLocations(name, position, Position.GEO_DMS);
     }
 
 //    function update() {
@@ -95,12 +89,10 @@ class WaypointController {
 //    function deleteAll() {
 //    }
 
-    private function exportWaypointToSavedLocationsDeg(name, position) {
-        System.println("exportWaypointToSavedLocationsDeg: Before conversion: " + position);
-
+    private function exportWaypointToSavedLocations(name, position, format) {
         $.removeWaypointFromPersistedContent(name);
 
-        var location = $.parsePosition(position, Position.GEO_DEG);
+        var location = $.parsePosition(position, format);
 
         if (location == null) {
             System.println("parsePosition result is null");
@@ -108,24 +100,29 @@ class WaypointController {
             return;
         }
 
-        System.println("exportWaypointToSavedLocationsDeg: After conversion: " + location.toDegrees());
+        System.println("exportWaypointToSavedLocations: will be exported to system: " + location.toDegrees());
         PersistedContent.saveWaypoint(location, {:name => name});
     }
 
-    private function exportWaypointToSavedLocationsDM(name, position) {
-        System.println("exportWaypointToSavedLocationsDM: Before conversion: " + position);
+    private function removeWaypointToRename(name) {
+        var index = name.find(",");
+        if (index != null) {
+            // rename operation
+            var prevName = name.substring(0, index);
+            mWaypoints.remove(prevName);
+            $.removeWaypointFromPersistedContent(prevName);
+            name = name.substring(index + 1, name.length());
+            Storage.setValue($.ID_LAST_WP_NAME, name);
+        }
+        return name;
+    }
 
-        $.removeWaypointFromPersistedContent(name);
-
-        var location = $.parsePosition(position, Position.GEO_DM);
-
-        if (location == null) {
-            System.println("parsePosition result is null");
-            WatchUi.pushView(new MessageView("Could not export to Saved Locations"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+    private function saveWaypointsList() {
+        try {
+            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
+        } catch (ex instanceof Toybox.Lang.StorageFullException) {
+            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
             return;
         }
-
-        System.println("exportWaypointToSavedLocationsDM: After conversion: " + location.toDegrees());
-        PersistedContent.saveWaypoint(location, {:name => name});
     }
 }

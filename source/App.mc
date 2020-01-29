@@ -14,6 +14,11 @@ const ID_WAYPOINTS_LIST = "Waypoints";
 
 var WPCtrl;
 
+enum {
+    LATITUDE,
+    LONGITUDE
+}
+
 class App extends Application.AppBase {
 
     function initialize() {
