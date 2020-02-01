@@ -71,46 +71,12 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
         switch (item.getId()) {
             case :menu_edit_lat: {
                 System.println("WAYPOINT MENU ==> Edit latitude");
-
-                switch (mPositionFormat) {
-                    case Position.GEO_DEG:
-                    {
-                        Storage.setValue($.ID_LAST_LAT_DD, mLatitude);
-                        Storage.setValue($.ID_LAST_LON_DD, mLongitude);
-                        Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
-
-                        WatchUi.pushView(
-                            new DegCoordinatePicker($.LATITUDE),
-                            new DegCoordinatePickerEditWaypointDelegate($.LATITUDE),
-                            WatchUi.SLIDE_IMMEDIATE
-                        );
-
-                        break;
-                    }
-                }
-
+                editPosition($.LATITUDE, mPositionFormat);
                 break;
             }
             case :menu_edit_lon: {
                 System.println("WAYPOINT MENU ==> Edit longitude");
-
-                switch (mPositionFormat) {
-                    case Position.GEO_DEG:
-                    {
-                        Storage.setValue($.ID_LAST_LAT_DD, mLatitude);
-                        Storage.setValue($.ID_LAST_LON_DD, mLongitude);
-                        Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
-
-                        WatchUi.pushView(
-                            new DegCoordinatePicker($.LONGITUDE),
-                            new DegCoordinatePickerEditWaypointDelegate($.LONGITUDE),
-                            WatchUi.SLIDE_IMMEDIATE
-                        );
-
-                        break;
-                    }
-                }
-
+                editPosition($.LONGITUDE, mPositionFormat);
                 break;
             }
             case :menu_rename: {
@@ -125,6 +91,28 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
 
                         var picker = new WaypointNamePicker();
                         WatchUi.pushView(picker, new NamePickerEditWaypointDelegate(picker, Position.GEO_DEG), WatchUi.SLIDE_IMMEDIATE);
+
+                        break;
+                    }
+                    case Position.GEO_DM:
+                    {
+                        Storage.setValue($.ID_LAST_LAT_DM, mLatitude);
+                        Storage.setValue($.ID_LAST_LON_DM, mLongitude);
+                        Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                        var picker = new WaypointNamePicker();
+                        WatchUi.pushView(picker, new NamePickerEditWaypointDelegate(picker, Position.GEO_DM), WatchUi.SLIDE_IMMEDIATE);
+
+                        break;
+                    }
+                    case Position.GEO_DMS:
+                    {
+                        Storage.setValue($.ID_LAST_LAT_DMS, mLatitude);
+                        Storage.setValue($.ID_LAST_LON_DMS, mLongitude);
+                        Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                        var picker = new WaypointNamePicker();
+                        WatchUi.pushView(picker, new NamePickerEditWaypointDelegate(picker, Position.GEO_DMS), WatchUi.SLIDE_IMMEDIATE);
 
                         break;
                     }
@@ -151,6 +139,56 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
             }
         }
 
+    }
+
+    private function editPosition(type, format) {
+
+        switch (format) {
+            case Position.GEO_DEG:
+            {
+                Storage.setValue($.ID_LAST_LAT_DD, mLatitude);
+                Storage.setValue($.ID_LAST_LON_DD, mLongitude);
+                Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                WatchUi.pushView(
+                    new DegCoordinatePicker(type),
+                    new DegCoordinatePickerEditWaypointDelegate(type),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
+                break;
+            }
+
+            case Position.GEO_DM:
+            {
+                Storage.setValue($.ID_LAST_LAT_DM, mLatitude);
+                Storage.setValue($.ID_LAST_LON_DM, mLongitude);
+                Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                WatchUi.pushView(
+                    new DmCoordinatePicker(type),
+                    new DmCoordinatePickerEditWaypointDelegate(type),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
+                break;
+            }
+
+            case Position.GEO_DMS:
+            {
+                Storage.setValue($.ID_LAST_LAT_DMS, mLatitude);
+                Storage.setValue($.ID_LAST_LON_DMS, mLongitude);
+                Storage.setValue($.ID_LAST_WP_NAME, mWaypointName);
+
+                WatchUi.pushView(
+                    new DmsCoordinatePicker(type),
+                    new DmsCoordinatePickerEditWaypointDelegate(type),
+                    WatchUi.SLIDE_IMMEDIATE
+                );
+
+                break;
+            }
+        }
     }
 
 }

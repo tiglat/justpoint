@@ -46,7 +46,12 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
                 break;
             }
             case :menu_current: {
-                System.println("Selected menu current location");
+                System.println("ADD NEW WAYPOINT MENU ==> Current location");
+                var prompt = WatchUi.loadResource(Rez.Strings.txt_wait_gps);
+                var progressBar = new WatchUi.ProgressBar(prompt, 0);
+                WatchUi.pushView(new GpsPositionView(progressBar), new GpsPositionViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+                WatchUi.pushView(progressBar, new GpsPositionProgressDelegate(), WatchUi.SLIDE_IMMEDIATE);
+
                 break;
             }
             default: {
@@ -55,5 +60,6 @@ class AddMenuDelegate extends WatchUi.Menu2InputDelegate {
         }
 
     }
+
 
 }

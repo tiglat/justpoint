@@ -8,6 +8,9 @@
     <string id="txt_clear_storage">Clear App Storage?</string>
     <string id="txt_save">Save?</string>
     <string id="txt_delete">Delete</string>
+    <string id="txt_wait_gps">Wait for GPS</string>
+    <string id="txt_no_gps_signal">No position info</string>
+    <string id="txt_gps_accuracy">Accuracy</string>
     
     <!-- Main Menu -->
 

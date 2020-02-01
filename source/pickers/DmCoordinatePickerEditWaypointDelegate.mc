@@ -3,7 +3,7 @@ using Toybox.WatchUi;
 using Toybox.Application.Storage as Storage;
 
 
-class DmCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
+class DmCoordinatePickerEditWaypointDelegate extends WatchUi.PickerDelegate {
 
     var mType;
 
@@ -34,21 +34,21 @@ class DmCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
 
         if (mType == $.LATITUDE) {
             Storage.setValue($.ID_LAST_LAT_DM, coordinate);
-
-            WatchUi.pushView(
-                new DmCoordinatePicker($.LONGITUDE),
-                new DmCoordinatePickerAddWaypointDelegate($.LONGITUDE),
-                WatchUi.SLIDE_IMMEDIATE
-            );
         } else {
             Storage.setValue($.ID_LAST_LON_DM, coordinate);
-
-            var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DM, true), WatchUi.SLIDE_IMMEDIATE);
-
         }
 
         System.println("coordinate = " + coordinate);
+
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+
+        var prompt = WatchUi.loadResource(Rez.Strings.txt_save);
+
+        WatchUi.pushView(
+            new WatchUi.Confirmation(prompt + " " + coordinate),
+            new SaveWaypointConfirmationDelegate(Position.GEO_DM),
+            WatchUi.SLIDE_IMMEDIATE
+        );
     }
 
 }

@@ -93,6 +93,9 @@ function convertDm(pos) {
         return 0;
     }
 
+    var signChar = pos.substring(0, 1);
+    var sign = signChar.equals("-") ? -1 : 1;
+
     var deg = pos.substring(0, index);
     var degFloat = deg.toFloat();
 
@@ -100,7 +103,7 @@ function convertDm(pos) {
     var minFloat = min.toFloat();
     var minInDeg = minFloat / 60.0;
 
-    return degFloat + minInDeg;
+    return degFloat + sign * minInDeg;
 }
 
 // convert coordinate from GEO_DMS format to GEO_DEG
@@ -110,6 +113,9 @@ function convertDms(pos) {
     if (index == null) {
         return 0;
     }
+
+    var signChar = pos.substring(0, 1);
+    var sign = signChar.equals("-") ? -1 : 1;
 
     var deg = pos.substring(0, index);
     var degFloat = deg.toFloat();
@@ -129,7 +135,7 @@ function convertDms(pos) {
     var secFloat = sec.toFloat();
     var secInDeg = secFloat / 3600.0;
 
-    return degFloat + minInDeg + secInDeg;
+    return degFloat + sign * minInDeg + sign * secInDeg;
 }
 
 function getPersistedContentItem(name) {
