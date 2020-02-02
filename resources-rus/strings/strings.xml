@@ -1,0 +1,47 @@
+<strings>
+    <string id="AppName">JustWaypoints</string>
+
+    <!-- Text prompts -->
+
+    <string id="txt_clear_storage">Удалить данные из памяти?</string>
+    <string id="txt_save">Сохранить?</string>
+    <string id="txt_delete">Удалить</string>
+    <string id="txt_delete_all">Удалить все точки?</string>
+    <string id="txt_wait_gps">Поиск спутников GPS</string>
+    <string id="txt_no_gps_signal">Местоположение не определено</string>
+    <string id="txt_continue">START - сохранить</string>
+    
+    <!-- Main Menu -->
+
+    <string id="menu_title_main">Точки</string>
+    <string id="menu_label_add" >Создать новую</string>
+    <string id="menu_label_delete_all">Удалить все</string>
+    <string id="menu_label_clean_storage">Отчистить хранилище</string>
+    <string id="menu_sublabel_clean_storage">Точки в системе удалены не будут</string>
+    <string id="menu_label_exit_app">Выйти из приложения</string>
+    
+    <!-- Add Menu -->
+    
+    <string id="menu_title_add">Создать новую</string>
+    <string id="menu_label_degrees">Добавить в формате DDD.DDDDD</string>
+    <string id="menu_label_minutes">Добавить в формате DDD:MM.MMMM</string>
+    <string id="menu_label_seconds">Добавить в формате DDD:MM:SS.SS</string>
+    <string id="menu_label_current">Найти свои координаты</string>
+
+    <!-- Waypoint Menu -->
+
+    <string id="menu_title_waypoint">Точки</string>
+    <string id="menu_label_edit_lat" >Изменить широту</string>
+    <string id="menu_label_edit_lon">Изменить долготу</string>
+    <string id="menu_label_rename">Переименовать</string>
+    <string id="menu_label_delete">Удалить</string>
+
+    <!-- Degrees Coordinate Picker -->
+    
+    <string id="picker_title_lat">Широта</string>
+    <string id="picker_title_lon">Долгота</string>
+    <string id="picker_title_name">Введите имя точки</string>
+    <string id="picker_char_ok">OK</string>
+    
+    
+</strings>
