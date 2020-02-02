@@ -1,4 +1,5 @@
 using Toybox.WatchUi;
+using Utils;
 using Toybox.Application.Storage as Storage;
 
 class DeleteWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
@@ -23,7 +24,7 @@ class DeleteWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
                 return;
             }
 
-            $.removeWaypointFromPersistedContent(mName);
+            Utils.removeWaypointFromPersistedContent(mName);
 
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);

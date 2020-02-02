@@ -1,6 +1,7 @@
 using Toybox.PersistedContent;
 using Toybox.Position;
 using Toybox.System;
+using Utils;
 using Toybox.Application.Storage as Storage;
 
 class WaypointController {
@@ -80,19 +81,15 @@ class WaypointController {
         exportWaypointToSavedLocations(name, position, Position.GEO_DMS);
     }
 
-//    function update() {
-//    }
-//
-//    function delete() {
-//    }
-//
-//    function deleteAll() {
-//    }
+    function deleteAll() {
+        Storage.clearValues();
+        Utils.removeAllWaypointsFromPersistedContent();
+    }
 
     private function exportWaypointToSavedLocations(name, position, format) {
-        $.removeWaypointFromPersistedContent(name);
+        Utils.removeWaypointFromPersistedContent(name);
 
-        var location = $.parsePosition(position, format);
+        var location = Utils.parsePosition(position, format);
 
         if (location == null) {
             System.println("parsePosition result is null");
@@ -110,7 +107,7 @@ class WaypointController {
             // rename operation
             var prevName = name.substring(0, index);
             mWaypoints.remove(prevName);
-            $.removeWaypointFromPersistedContent(prevName);
+            Utils.removeWaypointFromPersistedContent(prevName);
             name = name.substring(index + 1, name.length());
             Storage.setValue($.ID_LAST_WP_NAME, name);
         }

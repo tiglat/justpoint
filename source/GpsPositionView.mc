@@ -13,7 +13,7 @@ class GpsPositionView extends WatchUi.View {
     private var mPromptLat;
     private var mPromptLon;
     private var mPromptNoInfo;
-    private var mPromptAccuracy;
+    private var mPromptContinue;
 
     function initialize(progressBar) {
         View.initialize();
@@ -22,7 +22,7 @@ class GpsPositionView extends WatchUi.View {
         mPromptLat = WatchUi.loadResource(Rez.Strings.picker_title_lat);
         mPromptLon = WatchUi.loadResource(Rez.Strings.picker_title_lon);
         mPromptNoInfo = WatchUi.loadResource(Rez.Strings.txt_no_gps_signal);
-        mPromptAccuracy = WatchUi.loadResource(Rez.Strings.txt_gps_accuracy);
+        mPromptContinue = WatchUi.loadResource(Rez.Strings.txt_continue);
         mPositionInfo = null;
         mProgressBar = progressBar;
 
@@ -50,11 +50,16 @@ class GpsPositionView extends WatchUi.View {
         var string;
         if( mPositionInfo != null ) {
             string = mPromptLat + " = " + mPositionInfo.position.toDegrees()[0].toString();
-            dc.drawText( (dc.getWidth() / 2), ((dc.getHeight() / 2) - 40), Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
+            var x = dc.getWidth() / 2;
+            var y = (dc.getHeight() / 2) - dc.getFontHeight(Graphics.FONT_SMALL);
+            dc.drawText( (dc.getWidth() / 2), y, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
+
             string = mPromptLon + " = " + mPositionInfo.position.toDegrees()[1].toString();
-            dc.drawText( (dc.getWidth() / 2), ((dc.getHeight() / 2) - 20), Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
-            string = mPromptAccuracy + " - " + getAccuracyDesc(mPositionInfo.accuracy);
-            dc.drawText( (dc.getWidth() / 2), ((dc.getHeight() / 2)), Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
+            y += dc.getFontHeight(Graphics.FONT_SMALL);
+            dc.drawText( (dc.getWidth() / 2), y, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
+
+            y += 2 * dc.getFontHeight(Graphics.FONT_SMALL);
+            dc.drawText( (dc.getWidth() / 2), y, Graphics.FONT_XTINY, mPromptContinue, Graphics.TEXT_JUSTIFY_CENTER );
         } else {
             dc.drawText( (dc.getWidth() / 2), (dc.getHeight() / 2), Graphics.FONT_SMALL, mPromptNoInfo, Graphics.TEXT_JUSTIFY_CENTER );
         }
@@ -75,8 +80,10 @@ class GpsPositionView extends WatchUi.View {
         if (info.accuracy >= Position.QUALITY_USABLE) {
             Position.enableLocationEvents(Position.LOCATION_DISABLE, self.method(:onPosition));
             System.println("GpsPositionView.onPosition: got good accuracy");
-            Storage.setValue($.ID_LAST_LAT_DD, myLocation[0]);
-            Storage.setValue($.ID_LAST_LON_DD, myLocation[1]);
+            var lat = myLocation[0].format("%+010.5f");
+            var lon = myLocation[1].format("%+010.5f");
+            Storage.setValue($.ID_LAST_LAT_DD, lat);
+            Storage.setValue($.ID_LAST_LON_DD, lon);
             mPositionInfo = info;
             mTimer.stop();
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE); // slide out ProgressBar view

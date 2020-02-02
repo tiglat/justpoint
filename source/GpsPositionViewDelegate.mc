@@ -6,8 +6,17 @@ class GpsPositionViewDelegate extends WatchUi.BehaviorDelegate {
         BehaviorDelegate.initialize();
     }
 
-    function onKey(keyEvent) {
-        System.println("GpsPositionViewDelegate: onKey");
+    function onBack() {
+        System.println("GpsPositionViewDelegate: onBack");
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
     }
+
+    function onSelect() {
+        System.println("GpsPositionViewDelegate: onSelect");
+        WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+
+        var picker = new WaypointNamePicker();
+        WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DEG, 3), WatchUi.SLIDE_IMMEDIATE);
+    }
+
 }

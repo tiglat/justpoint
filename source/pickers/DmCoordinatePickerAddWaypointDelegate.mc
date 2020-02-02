@@ -44,7 +44,7 @@ class DmCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             Storage.setValue($.ID_LAST_LON_DM, coordinate);
 
             var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DM, true), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DM, 5), WatchUi.SLIDE_IMMEDIATE);
 
         }
 

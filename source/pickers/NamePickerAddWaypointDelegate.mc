@@ -1,16 +1,17 @@
 using Toybox.WatchUi;
+using Utils;
 using Toybox.Application.Storage as Storage;
 
 class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
     private var mPicker;
     private var mFormat;
-    private var mShouldPopViews;
+    private var mPopViewsNumber;
 
-    function initialize(picker, format, shouldPopViews) {
+    function initialize(picker, format, popNumber) {
         PickerDelegate.initialize();
         mPicker = picker;
         mFormat = format;
-        mShouldPopViews = shouldPopViews;
+        mPopViewsNumber = popNumber;
     }
 
     function onCancel() {
@@ -29,17 +30,13 @@ class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             Storage.setValue(ID_LAST_WP_NAME, mPicker.getTitle());
             System.println("Waypoint name = " + mPicker.getTitle());
 
-            if (mShouldPopViews) {
-                // bring main view to foreground in order to update its content
-                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
-                WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            // return to the Main View
+            for (var i = 0; i < mPopViewsNumber; i++) {
                 WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             }
 
-            var lat = getLastLatitude(mFormat);
-            var lon = getLastLongitude(mFormat);
+            var lat = Utils.getLastLatitude(mFormat);
+            var lon = Utils.getLastLongitude(mFormat);
 
             var prompt = WatchUi.loadResource(Rez.Strings.txt_save);
 

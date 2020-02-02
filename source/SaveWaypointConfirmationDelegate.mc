@@ -33,6 +33,8 @@ class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
                     break;
                 }
             }
+
+            WatchUi.requestUpdate();
         }
     }
 

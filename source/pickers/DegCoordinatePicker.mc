@@ -62,6 +62,8 @@ class DegCoordinatePicker extends WatchUi.Picker {
         var defaults = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         var coordinate = _type == LATITUDE ? Storage.getValue(ID_LAST_LAT_DD) : Storage.getValue(ID_LAST_LON_DD);
 
+        System.println("DegCoordinatePicker: prev coordinate = " + coordinate);
+
         if (coordinate != null) {
             var charArray = coordinate.toCharArray();
 

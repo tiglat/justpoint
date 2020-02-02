@@ -42,7 +42,7 @@ class DegCoordinatePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             Storage.setValue($.ID_LAST_LON_DD, coordinate);
 
             var picker = new WaypointNamePicker();
-            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DEG, true), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DEG, 5), WatchUi.SLIDE_IMMEDIATE);
 
         }
 

@@ -7,12 +7,14 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
     private var mAddNewWaypointMenu;
     private var mEditWaypointMenu;
     private var mClearStorageConfirmText;
+    private var mDeleteAllConfirmText;
 
     function initialize() {
         Menu2InputDelegate.initialize();
 
         mAddNewWaypointMenu = new Rez.Menus.AddMenu();
         mClearStorageConfirmText = WatchUi.loadResource(Rez.Strings.txt_clear_storage);
+        mDeleteAllConfirmText = WatchUi.loadResource(Rez.Strings.txt_delete_all);
     }
 
     function onSelect(item) {
@@ -27,7 +29,7 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
         } else if (commandId == :menu_delete_all_id) {
 
             System.println("MAIN MENU ==> Delete all");
-            WPCtrl.saveDegrees();
+            WatchUi.pushView(new WatchUi.Confirmation(mDeleteAllConfirmText), new DeleteAllConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
 
         } else if (commandId == :menu_clean_storage_id) {
 
@@ -76,6 +78,22 @@ class ClearStorageConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             System.println("Storage is cleaned");
+        }
+    }
+
+}
+
+class DeleteAllConfirmationDelegate extends WatchUi.ConfirmationDelegate {
+
+    function initialize() {
+        ConfirmationDelegate.initialize();
+    }
+
+    function onResponse(response) {
+        if (response == CONFIRM_YES) {
+            WPCtrl.deleteAll();
+            WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+            System.println("All waypoints are deleted");
         }
     }
 

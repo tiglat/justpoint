@@ -1,6 +1,6 @@
 using Toybox.Application;
 using Toybox.WatchUi;
-using Toybox.Time.Gregorian;
+using Utils;
 using Toybox.Application.Storage as Storage;
 
 const ID_LAST_LAT_DD    = "LastLatDeg";
@@ -29,21 +29,8 @@ class App extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state) {
-        var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        var dateString = Lang.format(
-            "$1$:$2$:$3$ $4$ $5$ $6$ $7$",
-            [
-                today.hour,
-                today.min,
-                today.sec,
-                today.day_of_week,
-                today.day,
-                today.month,
-                today.year
-            ]
-        );
 
-        System.println("APPLICATION STARTED: " + dateString);
+        System.println("APPLICATION STARTED: " + Utils.getDateString());
     }
 
     // onStop() is called when your application is exiting
