@@ -20,23 +20,24 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
     function onSelect(item) {
 
         var commandId = item.getId();
+        var subLable = item.getSubLabel();
 
-        if (commandId == :menu_add_id) {
+        if (commandId == :menu_add_id && subLable == null) {
 
             System.println("MAIN MENU ==> Add");
             WatchUi.pushView(mAddNewWaypointMenu, new AddMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
 
-        } else if (commandId == :menu_delete_all_id) {
+        } else if (commandId == :menu_delete_all_id && subLable == null) {
 
             System.println("MAIN MENU ==> Delete all");
             WatchUi.pushView(new WatchUi.Confirmation(mDeleteAllConfirmText), new DeleteAllConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
 
-        } else if (commandId == :menu_clean_storage_id) {
+        } else if (commandId == :menu_clean_storage_id && subLable == null) {
 
             System.println("MAIN MENU ==> Clean storage");
             WatchUi.pushView(new WatchUi.Confirmation(mClearStorageConfirmText), new ClearStorageConfirmationDelegate(), WatchUi.SLIDE_IMMEDIATE);
 
-        } else if (commandId == :menu_exit_app_id) {
+        } else if (commandId == :menu_exit_app_id && subLable == null) {
 
             System.println("MAIN MENU ==> Exit App");
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
