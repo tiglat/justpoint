@@ -35,6 +35,9 @@ class App extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state) {
+        if (WPCtrl != null) {
+            WPCtrl.saveWaypoints();
+        }
     }
 
     // Return the initial view of your application here

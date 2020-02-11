@@ -14,50 +14,15 @@ class WaypointMenuDelegate extends WatchUi.Menu2InputDelegate {
         Menu2InputDelegate.initialize();
         mWaypointName = name;
 
-        var points = Storage.getValue($.ID_WAYPOINTS_LIST);
+        var value = WPCtrl.getWaypoint(name);
 
-        if (points == null) {
-            System.println("Failed to read waypoint array");
-            return;
+        if (value == null) {
+            throw new NoWaypointException("No such waypoint");
         }
 
-        if (points.isEmpty()) {
-            System.println("No waypoints in the array");
-            return;
-        }
-
-        var value = points.get(name);
-
-        var index = value.find(",");
-
-        if (index == null) {
-            System.println("Wrong position value format");
-            return;
-        }
-
-        var format = value.substring(0, index);
-
-        if (format.equals("D")) {
-            mPositionFormat = Position.GEO_DEG;
-        } else if (format.equals("M")) {
-            mPositionFormat = Position.GEO_DM;
-        } else if (format.equals("S")) {
-            mPositionFormat = Position.GEO_DMS;
-        } else {
-            System.println("Unknown postion format found");
-            return;
-        }
-
-        var position = value.substring(index + 1, value.length());
-        index = position.find(",");
-
-        if (index == null) {
-            System.println("Wrong position value format");
-            return;
-        }
-
-        mLatitude = position.substring(0, index);
-        mLongitude = position.substring(index + 1, position.length());
+        mPositionFormat = value.getFormat();
+        mLatitude = value.getLatitude();
+        mLongitude = value.getLongitude();
     }
 
     function onBack() {

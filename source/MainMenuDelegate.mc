@@ -13,8 +13,10 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
         Menu2InputDelegate.initialize();
 
         mAddNewWaypointMenu = new Rez.Menus.AddMenu();
+        mEditWaypointMenu   = new Rez.Menus.WaypointMenu();
+
         mClearStorageConfirmText = WatchUi.loadResource(Rez.Strings.txt_clear_storage);
-        mDeleteAllConfirmText = WatchUi.loadResource(Rez.Strings.txt_delete_all);
+        mDeleteAllConfirmText    = WatchUi.loadResource(Rez.Strings.txt_delete_all);
     }
 
     function onSelect(item) {
@@ -46,13 +48,14 @@ class MainMenuDelegate extends WatchUi.Menu2InputDelegate {
         } else {
 
             var waypointName = item.getLabel();
-
             System.println("MAIN MENU ==> Waypoint selected: " + waypointName);
 
-            mEditWaypointMenu = new Rez.Menus.WaypointMenu();
             mEditWaypointMenu.setTitle(waypointName);
-
-            WatchUi.pushView(mEditWaypointMenu, new WaypointMenuDelegate(waypointName), WatchUi.SLIDE_IMMEDIATE);
+            try {
+                WatchUi.pushView(mEditWaypointMenu, new WaypointMenuDelegate(waypointName), WatchUi.SLIDE_IMMEDIATE);
+            } catch (ex instanceof NoWaypointException) {
+                System.println(ex.getErrorMessage());
+            }
 
         }
 

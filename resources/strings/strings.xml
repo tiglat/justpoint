@@ -1,10 +1,8 @@
 <strings>
-    <string id="AppName">JustWaypoints</string>
+    <string id="AppName">JustPoint</string>
 
     <!-- Text prompts -->
 
-    <string id="txt_press_menu">Click the menu button</string>
-    <string id="txt_empty_list">No waypoints</string>
     <string id="txt_clear_storage">Clear App Storage?</string>
     <string id="txt_save">Save?</string>
     <string id="txt_delete">Delete</string>
@@ -12,6 +10,8 @@
     <string id="txt_wait_gps">Wait for GPS</string>
     <string id="txt_no_gps_signal">No position info</string>
     <string id="txt_continue">Press START to save</string>
+    <string id="txt_no_memory">No memory to save waypoint</string>
+    <string id="txt_failed_export">Failed export to Saved Locations</string>
     
     <!-- Main Menu -->
 

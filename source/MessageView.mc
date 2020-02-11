@@ -11,7 +11,7 @@ class MessageView extends WatchUi.View {
             {
                 :text=>msg,
                 :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
-                :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER,
                 :color=>Graphics.COLOR_WHITE,
                 :font=>Graphics.FONT_SYSTEM_TINY
             }

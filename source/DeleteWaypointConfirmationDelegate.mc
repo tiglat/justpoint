@@ -14,17 +14,7 @@ class DeleteWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
     function onResponse(response) {
         if (response == CONFIRM_YES) {
 
-            var waypoints = Storage.getValue($.ID_WAYPOINTS_LIST);
-            waypoints.remove(mName);
-
-            try {
-                Storage.setValue($.ID_WAYPOINTS_LIST, waypoints);
-            } catch (ex instanceof Toybox.Lang.StorageFullException) {
-                WatchUi.pushView(new MessageView("Not enough memory"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
-                return;
-            }
-
-            Utils.removeWaypointFromPersistedContent(mName);
+            WPCtrl.delete(mName);
 
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);

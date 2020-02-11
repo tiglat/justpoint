@@ -38,24 +38,14 @@ class MainView extends WatchUi.View {
 
         mMainMenu = new WatchUi.Menu2({:title=>mMainMenuTitle});
 
-        var points = Storage.getValue($.ID_WAYPOINTS_LIST);
+        var points = WPCtrl.getWaypointList();
 
         if (points != null && !points.isEmpty()) {
             var wpNames = points.keys();
 
             for (var i = 0; i < wpNames.size(); i++) {
-                var position = points.get(wpNames[i]);
-                var formatSeparatorIndex = position.find(",");
-                var label = position.substring(formatSeparatorIndex + 1, position.length());
-
-                mMainMenu.addItem(
-                    new WatchUi.MenuItem(
-                        wpNames[i],
-                        label,
-                        wpNames[i],
-                        {}
-                    )
-                );
+                var waypoint = points.get(wpNames[i]);
+                mMainMenu.addItem(new WatchUi.MenuItem(wpNames[i], waypoint.getPosition(), wpNames[i], {}));
             }
         }
 

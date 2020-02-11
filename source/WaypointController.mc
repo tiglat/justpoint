@@ -1,99 +1,149 @@
 using Toybox.PersistedContent;
 using Toybox.Position;
 using Toybox.System;
+using Toybox.Lang;
 using Utils;
 using Toybox.Application.Storage as Storage;
 
 class WaypointController {
 
     var mWaypoints;
+    var mNoMemoryPrompt;
+    var mFailedExportPrompt;
 
-    function initialize() {
-        mWaypoints = Storage.getValue($.ID_WAYPOINTS_LIST);
+    public function initialize() {
+        var waypoints = Storage.getValue($.ID_WAYPOINTS_LIST);
 
-        if (mWaypoints == null) {
-            mWaypoints = {};
+        mWaypoints = {};
+
+        if (waypoints != null && !waypoints.isEmpty()) {
+            readWaypoints(waypoints);
         }
 
+        mNoMemoryPrompt     = Rez.Strings.txt_no_memory;
+        mFailedExportPrompt = Rez.Strings.txt_failed_export;
     }
 
-    function saveDegrees() {
+    public function getWaypointList() {
+        return mWaypoints;
+    }
+
+    public function getWaypoint(name) {
+
+        if (mWaypoints.isEmpty()) {
+            System.println("No waypoints in the array");
+            return null;
+        }
+
+        return mWaypoints.get(name);
+    }
+
+    public function save(format) {
         var name = Storage.getValue($.ID_LAST_WP_NAME);
-        var lat  = Storage.getValue($.ID_LAST_LAT_DD);
-        var lon  = Storage.getValue($.ID_LAST_LON_DD);
+        var lat  = Utils.getLastLatitude(format);
+        var lon  = Utils.getLastLongitude(format);
 
         if (name == null || lat == null || lon == null) {
-            System.println("saveDegrees: some of input values is null");
+            System.println("save: some of input values is null");
             return;
         }
 
         name = removeWaypointToRename(name);
 
-        var position = lat + "," + lon;
-        var waypointValue = "D," + position;
-        mWaypoints.put(name, waypointValue);
-        saveWaypointsList();
+        var waypoint;
 
-        System.println("saveDegrees: name= " + name + ", position= " + position);
-
-        exportWaypointToSavedLocations(name, position, Position.GEO_DEG);
-    }
-
-    function saveDM() {
-        var name = Storage.getValue($.ID_LAST_WP_NAME);
-        var lat  = Storage.getValue($.ID_LAST_LAT_DM);
-        var lon  = Storage.getValue($.ID_LAST_LON_DM);
-
-        if (name == null || lat == null || lon == null) {
-            System.println("saveDM: some of input values is null");
+        try {
+            waypoint = new Waypoint(lat, lon, format);
+        } catch (ex instanceof InvalidValueException) {
+            System.println("Failed to create waypoint due to wrong argument");
             return;
         }
 
-        name = removeWaypointToRename(name);
+        mWaypoints.put(name, waypoint);
+        exportWaypointToSavedLocations(name, waypoint);
 
-        var position = lat + "," + lon;
-        mWaypoints.put(name, "M," + position);
-        saveWaypointsList();
-
-        System.println("saveDM: name= " + name + ", position= " + position);
-
-        exportWaypointToSavedLocations(name, position, Position.GEO_DM);
+        System.println("save: name= " + name + ", position= " + waypoint.getPosition());
     }
 
-    function saveDMS() {
-        var name = Storage.getValue($.ID_LAST_WP_NAME);
-        var lat  = Storage.getValue($.ID_LAST_LAT_DMS);
-        var lon  = Storage.getValue($.ID_LAST_LON_DMS);
-
-        if (name == null || lat == null || lon == null) {
-            System.println("saveDMS: some of input values is null");
-            return;
-        }
-
-        name = removeWaypointToRename(name);
-
-        var position = lat + "," + lon;
-        mWaypoints.put(name, "S," + position);
-        saveWaypointsList();
-
-        System.println("saveDMS: name= " + name + ", position= " + position);
-
-        exportWaypointToSavedLocations(name, position, Position.GEO_DMS);
+    public function delete(name) {
+        mWaypoints.remove(name);
+        Utils.removeWaypointFromPersistedContent(name);
     }
 
-    function deleteAll() {
+    public function deleteAll() {
         Storage.clearValues();
         Utils.removeAllWaypointsFromPersistedContent();
     }
 
-    private function exportWaypointToSavedLocations(name, position, format) {
+    public function saveWaypoints() {
+        try {
+            var names = mWaypoints.keys();
+            var stringWaypoints = {};
+
+            for (var i = 0; i < names.size(); i++) {
+                var waypoint = mWaypoints.get(names[i]);
+                stringWaypoints.put(names[i], waypoint.getFormatChar() + "," + waypoint.getLatitude() + "," + waypoint.getLongitude());
+            }
+
+            Storage.setValue($.ID_WAYPOINTS_LIST, stringWaypoints);
+        } catch (ex instanceof Toybox.Lang.StorageFullException) {
+            System.println("StorageFullException during saving waypoints");
+            return;
+        }
+    }
+
+    private function readWaypoints(points) {
+
+        var names = points.keys();
+
+        for (var i = 0; i < names.size(); i++) {
+
+            var value = points.get(names[i]);
+
+            var index = value.find(",");
+            if (index == null) {
+                System.println("Wrong position value format for point: " + names[i]);
+                continue;
+            }
+
+            var format = Position.GEO_DEG;
+            var formatChar = value.substring(0, index);
+
+            if (formatChar.equals("D")) {
+                format = Position.GEO_DEG;
+            } else if (formatChar.equals("M")) {
+                format = Position.GEO_DM;
+            } else if (formatChar.equals("S")) {
+                format = Position.GEO_DMS;
+            } else {
+                System.println("Unknown postion format found for point: " + names[i]);
+                continue;
+            }
+
+            var position = value.substring(index + 1, value.length());
+
+            index = position.find(",");
+            if (index == null) {
+                System.println("Wrong position value format for point: " + names[i]);
+                continue;
+            }
+
+            var lat = position.substring(0, index);
+            var lon = position.substring(index + 1, position.length());
+
+            mWaypoints.put(names[i], new Waypoint(lat, lon, format));
+        }
+
+    }
+
+    private function exportWaypointToSavedLocations(name, waypoint) {
         Utils.removeWaypointFromPersistedContent(name);
 
-        var location = Utils.parsePosition(position, format);
+        var location = waypoint.getLocation();
 
         if (location == null) {
             System.println("parsePosition result is null");
-            WatchUi.pushView(new MessageView("Could not export to Saved Locations"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
+            WatchUi.pushView(new MessageView(mFailedExportPrompt), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
             return;
         }
 
@@ -101,6 +151,8 @@ class WaypointController {
         PersistedContent.saveWaypoint(location, {:name => name});
     }
 
+
+    // In case of rename name has format "oldname,newname"
     private function removeWaypointToRename(name) {
         var index = name.find(",");
         if (index != null) {
@@ -114,12 +166,4 @@ class WaypointController {
         return name;
     }
 
-    private function saveWaypointsList() {
-        try {
-            Storage.setValue($.ID_WAYPOINTS_LIST, mWaypoints);
-        } catch (ex instanceof Toybox.Lang.StorageFullException) {
-            WatchUi.pushView(new MessageView("No memory to save waypoint"), new MessageViewDelegate(), WatchUi.SLIDE_IMMEDIATE);
-            return;
-        }
-    }
 }

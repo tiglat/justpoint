@@ -10,6 +10,8 @@
     <string id="txt_wait_gps">Поиск спутников GPS</string>
     <string id="txt_no_gps_signal">Местоположение не определено</string>
     <string id="txt_continue">START - сохранить</string>
+    <string id="txt_no_memory">Нет места в памяти</string>
+    <string id="txt_failed_export">Ошибка при экспорте в Сохр.Мест.</string>
     
     <!-- Main Menu -->
 

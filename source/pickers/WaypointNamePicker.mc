@@ -3,7 +3,7 @@ using Toybox.Application.Storage as Storage;
 
 class WaypointNamePicker extends WatchUi.Picker {
 
-    const CHAR_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz12345678790._-+*@#&<>";
+    const CHAR_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678790._-+*@#&<>";
     const MAX_TEXT_LEN = 15;
 
     private var _TypedText;
