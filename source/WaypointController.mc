@@ -7,17 +7,16 @@ using Toybox.Application.Storage as Storage;
 
 class WaypointController {
 
-    var mWaypoints;
+    var mWaypoints = {};
     var mNoMemoryPrompt;
     var mFailedExportPrompt;
+    var mIsUpdated = false;
 
     public function initialize() {
         var waypoints = Storage.getValue($.ID_WAYPOINTS_LIST);
 
-        mWaypoints = {};
-
         if (waypoints != null && !waypoints.isEmpty()) {
-            readWaypoints(waypoints);
+            restoreWaypoints(waypoints);
         }
 
         mNoMemoryPrompt     = Rez.Strings.txt_no_memory;
@@ -60,6 +59,7 @@ class WaypointController {
         }
 
         mWaypoints.put(name, waypoint);
+        mIsUpdated = true;
         exportWaypointToSavedLocations(name, waypoint);
 
         System.println("save: name= " + name + ", position= " + waypoint.getPosition());
@@ -68,6 +68,7 @@ class WaypointController {
     public function delete(name) {
         mWaypoints.remove(name);
         Utils.removeWaypointFromPersistedContent(name);
+        mIsUpdated = true;
     }
 
     public function deleteAll() {
@@ -75,14 +76,19 @@ class WaypointController {
         Utils.removeAllWaypointsFromPersistedContent();
     }
 
-    public function saveWaypoints() {
+    public function storeWaypoints() {
+
+        if (!mIsUpdated) {
+            return;
+        }
+
         try {
             var names = mWaypoints.keys();
             var stringWaypoints = {};
 
             for (var i = 0; i < names.size(); i++) {
                 var waypoint = mWaypoints.get(names[i]);
-                stringWaypoints.put(names[i], waypoint.getFormatChar() + "," + waypoint.getLatitude() + "," + waypoint.getLongitude());
+                stringWaypoints.put(names[i], waypoint.serialize());
             }
 
             Storage.setValue($.ID_WAYPOINTS_LIST, stringWaypoints);
@@ -92,7 +98,7 @@ class WaypointController {
         }
     }
 
-    private function readWaypoints(points) {
+    private function restoreWaypoints(points) {
 
         var names = points.keys();
 

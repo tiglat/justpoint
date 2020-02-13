@@ -94,6 +94,10 @@ class Waypoint {
         return location;
     }
 
+    function serialize() {
+        return getFormatChar() + "," + mLatitude + "," + mLongitude;
+    }
+
     // convert coordinate from GEO_DM format to GEO_DEG
     private function convertDm(pos) {
 
