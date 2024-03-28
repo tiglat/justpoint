@@ -50,19 +50,13 @@ module Utils {
         switch (format) {
             case Position.GEO_DEG: {
                 return Storage.getValue(ID_LAST_LAT_DD);
-                break;
             }
-
             case Position.GEO_DM: {
                 return Storage.getValue(ID_LAST_LAT_DM);
-                break;
             }
-
             case Position.GEO_DMS: {
                 return Storage.getValue(ID_LAST_LAT_DMS);
-                break;
             }
-
         }
 
         return null;
@@ -73,15 +67,11 @@ module Utils {
             case Position.GEO_DEG: {
                 return Storage.getValue(ID_LAST_LON_DD);
             }
-
             case Position.GEO_DM: {
                 return Storage.getValue(ID_LAST_LON_DM);
-                break;
             }
-
             case Position.GEO_DMS: {
                 return Storage.getValue(ID_LAST_LON_DMS);
-                break;
             }
         }
         return null;

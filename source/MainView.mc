@@ -1,10 +1,10 @@
 using Toybox.WatchUi;
+using Toybox.Lang;
 using Toybox.Application.Storage as Storage;
 
 class MainView extends WatchUi.View {
 
     private var mMainMenu;
-    private var mWaypointsMenuDelegate;
     private var mMainMenuTitle;
 
 
@@ -38,14 +38,14 @@ class MainView extends WatchUi.View {
 
         mMainMenu = new WatchUi.Menu2({:title=>mMainMenuTitle});
 
-        var points = WPCtrl.getWaypointList();
+        var points = WPCtrl.getWaypointList() as Lang.Dictionary;
 
         if (points != null && !points.isEmpty()) {
-            var wpNames = points.keys();
+            var wpNames = points.keys() as Lang.Array<Lang.String>;
 
             for (var i = 0; i < wpNames.size(); i++) {
-                var waypoint = points.get(wpNames[i]);
-                mMainMenu.addItem(new WatchUi.MenuItem(wpNames[i], waypoint.getPosition(), wpNames[i], {}));
+                var waypoint = points.get(wpNames[i]) as Waypoint;
+                mMainMenu.addItem(new WatchUi.MenuItem(wpNames[i] as Lang.String, waypoint.getPosition(), wpNames[i], {}));
             }
         }
 

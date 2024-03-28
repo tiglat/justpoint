@@ -7,7 +7,7 @@ using Toybox.Application.Storage as Storage;
 
 class WaypointController {
 
-    var mWaypoints = {};
+    var mWaypoints as Lang.Dictionary = {};
     var mNoMemoryPrompt;
     var mFailedExportPrompt;
     var mIsUpdated = false;
@@ -23,7 +23,7 @@ class WaypointController {
         mFailedExportPrompt = Rez.Strings.txt_failed_export;
     }
 
-    public function getWaypointList() {
+    public function getWaypointList() as Lang.Dictionary {
         return mWaypoints;
     }
 
@@ -37,7 +37,7 @@ class WaypointController {
         return mWaypoints.get(name);
     }
 
-    public function save(format) {
+    public function save(format as Position.CoordinateFormat) {
         var name = Storage.getValue($.ID_LAST_WP_NAME);
         var lat  = Utils.getLastLatitude(format);
         var lon  = Utils.getLastLongitude(format);
@@ -53,7 +53,7 @@ class WaypointController {
 
         try {
             waypoint = new Waypoint(lat, lon, format);
-        } catch (ex instanceof InvalidValueException) {
+        } catch (ex instanceof Lang.InvalidValueException) {
             System.println("Failed to create waypoint due to wrong argument");
             return;
         }
@@ -87,7 +87,7 @@ class WaypointController {
             var stringWaypoints = {};
 
             for (var i = 0; i < names.size(); i++) {
-                var waypoint = mWaypoints.get(names[i]);
+                var waypoint = mWaypoints.get(names[i]) as Waypoint;
                 stringWaypoints.put(names[i], waypoint.serialize());
             }
 
@@ -100,7 +100,7 @@ class WaypointController {
 
     private function restoreWaypoints(points) {
 
-        var names = points.keys();
+        var names = points.keys() as Lang.Array<Lang.String>;
 
         for (var i = 0; i < names.size(); i++) {
 

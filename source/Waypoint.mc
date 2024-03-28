@@ -9,11 +9,11 @@ class Waypoint {
     function initialize(lat, lon, format) {
 
         if (lat == null || lon == null) {
-            throw new Lang.InvalidValueException();
+            throw new Lang.InvalidValueException("Coordinates are empty");
         }
 
         if (format != Position.GEO_DEG && format != Position.GEO_DM && format != Position.GEO_DMS) {
-            throw new Lang.InvalidValueException();
+            throw new Lang.InvalidValueException("Coordinates format is wrong");
         }
 
         mLatitude = lat;

@@ -9,5 +9,6 @@ class GpsPositionProgressDelegate extends WatchUi.BehaviorDelegate {
     function onBack() {
         System.println("GpsPositionProgressDelegate: onBack");
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        return true;
     }
 }

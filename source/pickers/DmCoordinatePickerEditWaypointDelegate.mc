@@ -14,6 +14,7 @@ class DmCoordinatePickerEditWaypointDelegate extends WatchUi.PickerDelegate {
 
     function onCancel() {
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        return true;
     }
 
     function onAccept(values) {
@@ -49,6 +50,7 @@ class DmCoordinatePickerEditWaypointDelegate extends WatchUi.PickerDelegate {
             new SaveWaypointConfirmationDelegate(Position.GEO_DM),
             WatchUi.SLIDE_IMMEDIATE
         );
+        return true;
     }
 
 }

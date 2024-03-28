@@ -1,10 +1,11 @@
 using Toybox.Graphics;
 using Toybox.WatchUi;
+using Toybox.Lang;
 
 class NumberPickerFactory extends WatchUi.PickerFactory {
-    hidden var mStart;
-    hidden var mStop;
-    hidden var mIncrement;
+    hidden var mStart as Lang.Number;
+    hidden var mStop as Lang.Number;
+    hidden var mIncrement as Lang.Number;
     hidden var mFormatString;
     hidden var mFont;
 
@@ -30,14 +31,15 @@ class NumberPickerFactory extends WatchUi.PickerFactory {
     }
 
     function getDrawable(index, selected) {
-        return new WatchUi.Text( 
-            { 
-                :text=>getValue(index).format(mFormatString), 
-                :color=>Graphics.COLOR_WHITE, 
-                :font=> mFont, 
-                :locX =>WatchUi.LAYOUT_HALIGN_CENTER, 
-                :locY=>WatchUi.LAYOUT_VALIGN_CENTER 
-            } 
+        var value = getValue(index) as Lang.Number;
+        return new WatchUi.Text(
+            {
+                :text=>value.format(mFormatString),
+                :color=>Graphics.COLOR_WHITE,
+                :font=> mFont,
+                :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            }
         );
     }
 

@@ -9,6 +9,7 @@ class GpsPositionViewDelegate extends WatchUi.BehaviorDelegate {
     function onBack() {
         System.println("GpsPositionViewDelegate: onBack");
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        return true;
     }
 
     function onSelect() {
@@ -17,6 +18,7 @@ class GpsPositionViewDelegate extends WatchUi.BehaviorDelegate {
 
         var picker = new WaypointNamePicker();
         WatchUi.pushView(picker, new NamePickerAddWaypointDelegate(picker, Position.GEO_DEG, 3), WatchUi.SLIDE_IMMEDIATE);
+        return true;
     }
 
 }

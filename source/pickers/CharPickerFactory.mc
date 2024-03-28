@@ -1,5 +1,6 @@
 using Toybox.Graphics;
 using Toybox.WatchUi;
+using Toybox.Lang;
 
 class CharPickerFactory extends WatchUi.PickerFactory {
     hidden var mCharacterSet;
@@ -31,10 +32,24 @@ class CharPickerFactory extends WatchUi.PickerFactory {
 
     function getDrawable(index, selected) {
         if(index == mCharacterSet.length()) {
-            return new WatchUi.Text( {:text=>Rez.Strings.picker_char_ok, :color=>Graphics.COLOR_WHITE, :font=>Graphics.FONT_LARGE, :locX =>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>WatchUi.LAYOUT_VALIGN_CENTER } );
+            return new WatchUi.Text(
+                {
+                    :text=>Rez.Strings.picker_char_ok,
+                    :color=>Graphics.COLOR_WHITE,
+                    :font=>Graphics.FONT_LARGE,
+                    :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+                    :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+                });
         }
 
-        return new WatchUi.Text( { :text=>getValue(index), :color=>Graphics.COLOR_WHITE, :font=> Graphics.FONT_LARGE, :locX =>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>WatchUi.LAYOUT_VALIGN_CENTER } );
+        return new WatchUi.Text(
+            {
+                :text=>getValue(index) as Lang.String,
+                :color=>Graphics.COLOR_WHITE,
+                :font=> Graphics.FONT_LARGE,
+                :locX =>WatchUi.LAYOUT_HALIGN_CENTER,
+                :locY=>WatchUi.LAYOUT_VALIGN_CENTER
+            });
     }
 
     function isDone(value) {

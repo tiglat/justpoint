@@ -21,6 +21,7 @@ class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
         else {
             mPicker.removeCharacter();
         }
+        return true;
     }
 
     function onAccept(values) {
@@ -47,6 +48,7 @@ class NamePickerAddWaypointDelegate extends WatchUi.PickerDelegate {
             );
 
         }
+        return true;
     }
 
 }

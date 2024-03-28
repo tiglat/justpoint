@@ -2,6 +2,7 @@ using Toybox.WatchUi;
 using Toybox.Timer;
 using Toybox.Position;
 using Toybox.System;
+using Toybox.Lang;
 using Toybox.Application.Storage as Storage;
 
 class GpsPositionView extends WatchUi.View {
@@ -10,10 +11,10 @@ class GpsPositionView extends WatchUi.View {
     private var mTimer;
     private var mProgressCounter;
     private var mPositionInfo;
-    private var mPromptLat;
-    private var mPromptLon;
-    private var mPromptNoInfo;
-    private var mPromptContinue;
+    private var mPromptLat as Lang.String;
+    private var mPromptLon as Lang.String;
+    private var mPromptNoInfo as Lang.String;
+    private var mPromptContinue as Lang.String;
 
     function initialize(progressBar) {
         View.initialize();
@@ -26,7 +27,7 @@ class GpsPositionView extends WatchUi.View {
         mPositionInfo = null;
         mProgressBar = progressBar;
 
-        Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, self.method(:onPosition));
+        Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
         mTimer.start( self.method(:onTimer), 1000, true );
     }
 
@@ -49,12 +50,13 @@ class GpsPositionView extends WatchUi.View {
         dc.setColor( Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT );
         var string;
         if( mPositionInfo != null ) {
-            string = mPromptLat + " = " + mPositionInfo.position.toDegrees()[0].toString();
-            var x = dc.getWidth() / 2;
+            var location = mPositionInfo.position.toDegrees() as Lang.Array<Lang.Double>;
+
+            string = mPromptLat + " = " + location[0].toString();
             var y = (dc.getHeight() / 2) - dc.getFontHeight(Graphics.FONT_SMALL);
             dc.drawText( (dc.getWidth() / 2), y, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
 
-            string = mPromptLon + " = " + mPositionInfo.position.toDegrees()[1].toString();
+            string = mPromptLon + " = " + location[1].toString();
             y += dc.getFontHeight(Graphics.FONT_SMALL);
             dc.drawText( (dc.getWidth() / 2), y, Graphics.FONT_SMALL, string, Graphics.TEXT_JUSTIFY_CENTER );
 
@@ -73,8 +75,8 @@ class GpsPositionView extends WatchUi.View {
     }
 
 
-    function onPosition(info) {
-        var myLocation = info.position.toDegrees();
+    public function onPosition(info as Position.Info) as Void {
+        var myLocation = info.position.toDegrees() as Lang.Array<Lang.Double>;
         System.println("GpsPositionView.onPosition: " + myLocation[0] + "," + myLocation[1]);
 
         if (info.accuracy >= Position.QUALITY_USABLE) {

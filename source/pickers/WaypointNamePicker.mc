@@ -6,21 +6,21 @@ class WaypointNamePicker extends WatchUi.Picker {
     const CHAR_SET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ12345678790._-+*@#&<>";
     const MAX_TEXT_LEN = 15;
 
-    private var _TypedText;
-    private var _Factory;
+    private var mTypedText;
+    private var mFactory;
 
     function initialize() {
-        _Factory = new CharPickerFactory(CHAR_SET, {:addOk=>true});
-        _TypedText = "";
+        mFactory = new CharPickerFactory(CHAR_SET, {:addOk=>true});
+        mTypedText = "";
 
         var lastName = Storage.getValue(ID_LAST_WP_NAME);
         var titleText = Rez.Strings.picker_title_name;
         var defaults = null;
 
         if (lastName != null) {
-            _TypedText = lastName;
+            mTypedText = lastName;
             titleText = lastName;
-            //defaults = [_Factory.getIndex(lastName.substring(lastName.length()-1, lastName.length()))];
+            //defaults = [mFactory.getIndex(lastName.substring(lastName.length()-1, lastName.length()))];
         }
 
         mTitle = new WatchUi.Text(
@@ -33,7 +33,7 @@ class WaypointNamePicker extends WatchUi.Picker {
             }
         );
 
-        Picker.initialize({:title=>mTitle, :pattern=>[_Factory], :defaults=>defaults});
+        Picker.initialize({:title=>mTitle, :pattern=>[mFactory], :defaults=>defaults});
     }
 
     function onUpdate(dc) {
@@ -43,32 +43,32 @@ class WaypointNamePicker extends WatchUi.Picker {
     }
 
     function addCharacter(character) {
-        if (_TypedText.length() < MAX_TEXT_LEN) {
-            _TypedText += character;
-            mTitle.setText(_TypedText);
+        if (mTypedText.length() < MAX_TEXT_LEN) {
+            mTypedText += character;
+            (mTitle as WatchUi.Text).setText(mTypedText);
         }
     }
 
     function removeCharacter() {
-        _TypedText = _TypedText.substring(0, _TypedText.length() - 1);
+        mTypedText = mTypedText.substring(0, mTypedText.length() - 1);
 
-        if (_TypedText.length() == 0) {
-            mTitle.setText(WatchUi.loadResource(Rez.Strings.picker_title_name));
+        if (mTypedText.length() == 0) {
+            (mTitle as WatchUi.Text).setText(WatchUi.loadResource(Rez.Strings.picker_title_name));
         }
         else {
-            mTitle.setText(_TypedText);
+            (mTitle as WatchUi.Text).setText(mTypedText);
         }
     }
 
     function getTitle() {
-        return _TypedText.toString();
+        return mTypedText.toString();
     }
 
     function getTitleLength() {
-        return _TypedText.length();
+        return mTypedText.length();
     }
 
     function isDone(value) {
-        return _Factory.isDone(value);
+        return mFactory.isDone(value);
     }
 }

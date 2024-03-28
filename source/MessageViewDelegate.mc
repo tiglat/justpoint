@@ -8,5 +8,6 @@ class MessageViewDelegate extends WatchUi.BehaviorDelegate {
 
     function onKey(keyEvent) {
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+        return true;
     }
 }

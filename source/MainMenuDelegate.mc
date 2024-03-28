@@ -83,6 +83,7 @@ class ClearStorageConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             System.println("Storage is cleaned");
         }
+        return true;
     }
 
 }
@@ -99,6 +100,7 @@ class DeleteAllConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
             System.println("All waypoints are deleted");
         }
+        return true;
     }
 
 }

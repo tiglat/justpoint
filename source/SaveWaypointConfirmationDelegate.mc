@@ -4,9 +4,9 @@ using Toybox.Position;
 
 class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
 
-    private var mFormat;
+    private var mFormat as Position.CoordinateFormat;
 
-    function initialize(format) {
+    function initialize(format as Position.CoordinateFormat) {
         ConfirmationDelegate.initialize();
         mFormat = format;
     }
@@ -16,6 +16,7 @@ class SaveWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             WPCtrl.save(mFormat);
             WatchUi.requestUpdate();
         }
+        return true;
     }
 
 }

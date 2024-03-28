@@ -22,6 +22,7 @@ class DeleteWaypointConfirmationDelegate extends WatchUi.ConfirmationDelegate {
             System.println("Waypoint is deleted: " + mName);
 
         }
+        return true;
     }
 
 }

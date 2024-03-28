@@ -101,7 +101,7 @@ class DmsCoordinatePicker extends WatchUi.Picker {
                    defaults[i] = 1;
                } else if (charArray[i] == '+') {
                    defaults[i] = 0;
-               } else if (charArray[i] == '.' || charArray[i] == ':' || charArray[i] == ''') {
+               } else if (charArray[i] == '.' || charArray[i] == ':' || charArray[i] == '\'') {
                    continue;
                } else {
                    var digit = charArray[i].toString();
