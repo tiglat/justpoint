@@ -9,3 +9,5 @@ ver. 0.0.1
     Initial version
 ver. 0.0.2
     - Add support of Fenix 7, Fenix 7 Pro and Vivoactive 4 product lines.
+ver. 0.0.3
+    - Fixed icon size for Vivoactive 4 and 4s
